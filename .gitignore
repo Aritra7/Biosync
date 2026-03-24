@@ -8,8 +8,8 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Evaluation results (can be large, regenerate as needed)
-eval_results/
+# Evaluation results — commit final results, ignore intermediate/test runs
+eval_results/test_*.json
 
 # Python packaging
 *.egg-info/
