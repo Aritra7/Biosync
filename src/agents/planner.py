@@ -147,10 +147,11 @@ ZIP CODE: {constraints.zip_code} (use ingredients available at typical US grocer
 DIETARY PREFERENCES: {constraints.dietary_preferences or 'None specified'}
 
 MEALS PER DAY: {meals_str}
+IMPORTANT: Include ONLY the meal types listed above. Do NOT add any other meal types.
 
 {FEW_SHOT_EXAMPLE}
 
-Now generate the full {constraints.plan_duration_days}-day plan. Output ONLY the JSON."""
+Now generate the full {constraints.plan_duration_days}-day plan with ONLY these meal types: {meals_str}. Output ONLY the JSON."""
 
     if revision_instructions:
         prompt += f"""
@@ -207,6 +208,11 @@ def run_planner(
         plan = MealPlan(**data)
     except (json.JSONDecodeError, ValueError, Exception) as e:
         raise ValueError(f"Planner returned invalid JSON: {e}\n\nRaw response:\n{raw[:500]}")
+
+    # Enforce meals_per_day — strip any meal types the user didn't ask for
+    allowed = {m.lower() for m in constraints.meals_per_day}
+    for day in plan.days:
+        day.meals = [m for m in day.meals if m.meal_type.lower() in allowed]
 
     if log_callback:
         total_meals = sum(len(d.meals) for d in plan.days)

@@ -12,8 +12,10 @@ import threading
 import streamlit as st
 from dotenv import load_dotenv
 
-load_dotenv()
-os.environ.setdefault("USE_MOCK_APIS", "true")
+load_dotenv(override=True)
+# Force mock APIs unless explicitly disabled via BIOSYNC_REAL_APIS=true
+if os.environ.get("BIOSYNC_REAL_APIS", "").lower() != "true":
+    os.environ["USE_MOCK_APIS"] = "true"
 
 from src.schemas import UserConstraints, MacroTargets
 from src.pipeline import run_pipeline
