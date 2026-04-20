@@ -94,7 +94,7 @@ def run_evaluation(
             error = None
 
             try:
-                if system == "biosync":
+                if system == "biosync" or system.startswith("biosync_"):
                     result = run_pipeline(constraints, log_callback=logs.append)
                 elif system == "baseline":
                     result = run_baseline(constraints, log_callback=logs.append)

@@ -7,7 +7,7 @@ to switch between claude-sonnet-4-6, claude-haiku-4-5-20251001, etc.
 
 import os
 import anthropic
-from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type, retry_if_exception
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,9 +16,15 @@ load_dotenv()
 DEFAULT_MODEL = "claude-sonnet-4-6"
 
 SUPPORTED_MODELS = {
-    "claude-sonnet-4-6": "claude-sonnet-4-6",
-    "claude-haiku-4-5":  "claude-haiku-4-5-20251001",
-    "claude-opus-4-6":   "claude-opus-4-6",
+    # Full model IDs
+    "claude-sonnet-4-6":        "claude-sonnet-4-6",
+    "claude-haiku-4-5-20251001": "claude-haiku-4-5-20251001",
+    "claude-haiku-4-5":          "claude-haiku-4-5-20251001",
+    "claude-opus-4-6":           "claude-opus-4-6",
+    # Short aliases used by multimodel runner
+    "sonnet": "claude-sonnet-4-6",
+    "haiku":  "claude-haiku-4-5-20251001",
+    "opus":   "claude-opus-4-6",
 }
 
 _client: anthropic.Anthropic | None = None
@@ -38,8 +44,17 @@ def get_active_model() -> str:
     return DEFAULT_MODEL
 
 
+def _is_retryable(exc: BaseException) -> bool:
+    """Retry on 429 rate limit and 529 overloaded errors."""
+    if isinstance(exc, anthropic.RateLimitError):
+        return True
+    if isinstance(exc, anthropic.APIStatusError) and exc.status_code == 529:
+        return True
+    return False
+
+
 @retry(
-    retry=retry_if_exception_type(anthropic.RateLimitError),
+    retry=retry_if_exception(_is_retryable),
     wait=wait_exponential(multiplier=1, min=15, max=90),
     stop=stop_after_attempt(6),
 )
