@@ -38,6 +38,7 @@ for key, default in {
     "running": False,
     "log_lines": [],
     "error": None,
+    "user_feedback": "",
 }.items():
     if key not in st.session_state:
         st.session_state[key] = default
@@ -93,12 +94,12 @@ with st.sidebar:
 # ---------------------------------------------------------------------------
 # Pipeline runner (background thread)
 # ---------------------------------------------------------------------------
-def _run_pipeline_thread(constraints: UserConstraints, log_q: queue.Queue):
+def _run_pipeline_thread(constraints: UserConstraints, log_q: queue.Queue, user_feedback: str = ""):
     try:
         def log_cb(msg: str):
             log_q.put(("log", msg))
 
-        result = run_pipeline(constraints, log_callback=log_cb)
+        result = run_pipeline(constraints, log_callback=log_cb, user_feedback=user_feedback)
         log_q.put(("done", result))
     except Exception as e:
         log_q.put(("error", str(e)))
@@ -130,6 +131,7 @@ if generate_btn and not st.session_state.running:
         st.session_state.error = None
         st.session_state.log_lines = []
         st.session_state.running = True
+        st.session_state.user_feedback = ""
         st.session_state._constraints = constraints
 
         log_q: queue.Queue = queue.Queue()
@@ -333,6 +335,42 @@ elif st.session_state.result is not None:
                     st.markdown("**Cooking Instructions**")
                     for i, step in enumerate(meal.cooking_instructions, 1):
                         st.markdown(f"{i}. {step}")
+
+    st.divider()
+
+    # -----------------------------------------------------------------------
+    # User revision request
+    # -----------------------------------------------------------------------
+    st.subheader("Request a Revision")
+    st.caption(
+        "Not happy with something? Describe what to change and Bio-Sync will regenerate "
+        "with your feedback (e.g. \"I hate olives, remove them\" or \"Make breakfast cheaper\")."
+    )
+    feedback_input = st.text_area(
+        "Your feedback",
+        placeholder="e.g. Remove olives from all meals. I'd prefer more variety in breakfasts.",
+        height=80,
+        label_visibility="collapsed",
+    )
+    if st.button("Revise Plan", type="primary", disabled=not feedback_input.strip()):
+        constraints: UserConstraints = st.session_state._constraints
+        st.session_state.result = None
+        st.session_state.error = None
+        st.session_state.log_lines = []
+        st.session_state.running = True
+        st.session_state.user_feedback = feedback_input.strip()
+
+        log_q: queue.Queue = queue.Queue()
+        st.session_state._log_q = log_q
+
+        t = threading.Thread(
+            target=_run_pipeline_thread,
+            args=(constraints, log_q, feedback_input.strip()),
+            daemon=True,
+        )
+        t.start()
+        st.session_state._thread = t
+        st.rerun()
 
     st.divider()
 

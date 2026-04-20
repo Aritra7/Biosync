@@ -128,7 +128,11 @@ FEW_SHOT_EXAMPLE = """Example output for a 1-day plan (breakfast + lunch + dinne
 }"""
 
 
-def _build_user_prompt(constraints: UserConstraints, revision_instructions: str = "") -> str:
+def _build_user_prompt(
+    constraints: UserConstraints,
+    revision_instructions: str = "",
+    previous_plan_json: str = "",
+) -> str:
     macros = constraints.macro_targets
     meals_str = ", ".join(constraints.meals_per_day)
 
@@ -161,6 +165,12 @@ IMPORTANT — CRITIC FEEDBACK (apply these revisions):
 
 Revise the previous plan to fix these issues. Output the complete corrected JSON."""
 
+    if previous_plan_json:
+        prompt += f"""
+
+PREVIOUS FAILING PLAN (do NOT repeat the same ingredient choices or structure that caused constraint violations):
+{previous_plan_json}"""
+
     return prompt
 
 
@@ -181,6 +191,7 @@ def run_planner(
     constraints: UserConstraints,
     revision_instructions: str = "",
     log_callback=None,
+    previous_plan_json: str = "",
 ) -> MealPlan:
     """
     Call the Planner LLM and parse the response into a MealPlan.
@@ -196,7 +207,7 @@ def run_planner(
         else:
             log_callback(f"Planner Agent: Generating {constraints.plan_duration_days}-day meal plan...")
 
-    user_prompt = _build_user_prompt(constraints, revision_instructions)
+    user_prompt = _build_user_prompt(constraints, revision_instructions, previous_plan_json)
     raw = llm_call(SYSTEM_PROMPT, user_prompt, max_tokens=8192)
 
     if log_callback:

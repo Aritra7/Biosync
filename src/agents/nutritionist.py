@@ -15,6 +15,67 @@ from src.agents.base import llm_call
 from src.tools.usda import lookup_nutrition
 from src.schemas import NutritionLookupResult, NutritionRecord
 
+# ---------------------------------------------------------------------------
+# Static lookup table for common ingredients.
+# These are resolved without an LLM call — faster and cheaper.
+# Add entries here whenever a new common ingredient causes repeated LLM calls.
+# ---------------------------------------------------------------------------
+_COMMON_TERM_MAPPING: dict[str, str] = {
+    "chicken breast": "chicken breast raw",
+    "ground beef": "ground beef raw",
+    "ground turkey": "ground turkey raw",
+    "salmon": "salmon raw",
+    "tuna": "tuna canned",
+    "canned tuna": "tuna canned",
+    "cod": "cod raw",
+    "tilapia": "tilapia raw",
+    "shrimp": "shrimp raw",
+    "eggs": "whole egg",
+    "egg": "whole egg",
+    "whole egg": "whole egg",
+    "greek yogurt": "greek yogurt",
+    "cottage cheese": "cottage cheese",
+    "milk": "milk",
+    "butter": "butter",
+    "brown rice": "brown rice cooked",
+    "white rice": "white rice cooked",
+    "rice": "white rice cooked",
+    "oats": "rolled oats dry",
+    "oatmeal": "rolled oats dry",
+    "rolled oats": "rolled oats dry",
+    "pasta": "pasta cooked",
+    "whole wheat bread": "whole wheat bread",
+    "bread": "whole wheat bread",
+    "sweet potato": "sweet potato cooked",
+    "broccoli": "broccoli raw",
+    "spinach": "spinach raw",
+    "onion": "onion",
+    "garlic": "garlic",
+    "tomato": "tomato",
+    "bell pepper": "bell pepper",
+    "cucumber": "cucumber",
+    "avocado": "avocado",
+    "banana": "banana",
+    "apple": "apple",
+    "black beans": "black beans cooked",
+    "canned black beans": "black beans cooked",
+    "chickpeas": "chickpeas cooked",
+    "canned chickpeas": "chickpeas cooked",
+    "lentils": "lentils cooked",
+    "tofu": "tofu",
+    "olive oil": "olive oil",
+    "peanut butter": "peanut butter",
+    "almonds": "almonds",
+    "mushroom": "mushroom",
+    "mushrooms": "mushroom",
+    "cauliflower": "cauliflower",
+    "green beans": "green beans",
+    "canned tomatoes": "canned tomatoes",
+    "salsa": "salsa",
+    "soy sauce": "soy sauce",
+    "honey": "honey",
+}
+
 SYSTEM_PROMPT = """You are the Nutritionist agent in Bio-Sync, a multi-agent meal planning system.
 
 Your job is to map ingredient names from a meal plan to the best USDA FoodData Central search terms.
@@ -34,10 +95,27 @@ Rules:
 
 def _resolve_usda_terms(ingredient_names: list[str]) -> dict[str, str]:
     """
-    Use the LLM to map ingredient names to optimal USDA search terms.
+    Map ingredient names to optimal USDA search terms.
+
+    First checks the static _COMMON_TERM_MAPPING lookup table (fast, no LLM call).
+    Only sends unknown ingredients to the LLM for resolution.
     Returns a dict of {original_name: usda_search_term}.
     """
-    names_json = json.dumps(ingredient_names, indent=2)
+    resolved: dict[str, str] = {}
+    unknown: list[str] = []
+
+    for name in ingredient_names:
+        key = name.lower().strip()
+        if key in _COMMON_TERM_MAPPING:
+            resolved[name] = _COMMON_TERM_MAPPING[key]
+        else:
+            unknown.append(name)
+
+    if not unknown:
+        return resolved
+
+    # LLM resolves only the ingredients not in the static table
+    names_json = json.dumps(unknown, indent=2)
     user_prompt = f"""Map these ingredient names to the best USDA FoodData Central search terms.
 
 Ingredients:
@@ -54,15 +132,20 @@ Output ONLY a JSON object like:
     start = raw.find("{")
     end = raw.rfind("}") + 1
     if start == -1:
-        # Fallback: identity mapping
-        return {name: name for name in ingredient_names}
+        # Fallback: identity mapping for unknown ingredients
+        for name in unknown:
+            resolved[name] = name
+        return resolved
 
     try:
         mapping = json.loads(raw[start:end])
-        # Ensure every original name has a mapping (use original as fallback)
-        return {name: mapping.get(name, name) for name in ingredient_names}
+        for name in unknown:
+            resolved[name] = mapping.get(name, name)
     except json.JSONDecodeError:
-        return {name: name for name in ingredient_names}
+        for name in unknown:
+            resolved[name] = name
+
+    return resolved
 
 
 def run_nutritionist(
@@ -85,10 +168,17 @@ def run_nutritionist(
             seen.add(key)
             unique_names.append(n)
 
-    if log_callback:
-        log_callback(f"Nutritionist Agent: Resolving {len(unique_names)} ingredients via USDA API...")
+    # Count how many will be resolved from the static table vs. the LLM
+    static_count = sum(1 for n in unique_names if n.lower().strip() in _COMMON_TERM_MAPPING)
+    llm_count = len(unique_names) - static_count
 
-    # Step 1: LLM resolves ambiguous names to optimal USDA search terms
+    if log_callback:
+        log_callback(
+            f"Nutritionist Agent: Resolving {len(unique_names)} ingredients "
+            f"({static_count} from lookup table, {llm_count} via LLM)..."
+        )
+
+    # Step 1: Resolve names to optimal USDA search terms (static table + LLM fallback)
     term_mapping = _resolve_usda_terms(unique_names)
 
     if log_callback:
