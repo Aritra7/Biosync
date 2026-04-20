@@ -12,7 +12,7 @@ Responsibilities:
 import json
 import re
 from src.agents.base import llm_call
-from src.tools.usda import lookup_nutrition, batch_lookup_nutrition
+from src.tools.usda import lookup_nutrition
 from src.schemas import NutritionLookupResult, NutritionRecord
 
 SYSTEM_PROMPT = """You are the Nutritionist agent in Bio-Sync, a multi-agent meal planning system.
