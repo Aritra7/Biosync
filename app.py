@@ -353,6 +353,29 @@ elif st.session_state.result is not None:
     # -----------------------------------------------------------------------
     # Agent log (collapsible)
     # -----------------------------------------------------------------------
+    # Substitutor suggestions (shown when plan didn't fully pass)
+    # -----------------------------------------------------------------------
+    subs = result.substitution_suggestions
+    if subs and subs.get("substitutions"):
+        st.subheader("Ingredient Swap Suggestions")
+        st.caption(
+            "The Substitutor Agent identified these swaps to help satisfy constraints "
+            "in a future iteration:"
+        )
+        st.info(subs.get("summary", ""))
+        for swap in subs["substitutions"]:
+            with st.expander(
+                f"Day {swap.get('day')} · {swap.get('meal_type','').capitalize()} — "
+                f"Replace **{swap.get('original_ingredient')}** with **{swap.get('substitute_ingredient')}**"
+            ):
+                col_a, col_b = st.columns(2)
+                col_a.metric("Est. Cost Saving", f"${swap.get('estimated_cost_saving_usd', 0):.2f}")
+                col_b.markdown(f"**Macro impact:** {swap.get('macro_impact', '—')}")
+                st.markdown(f"**Reason:** {swap.get('reason', '—')}")
+
+    st.divider()
+
+    # -----------------------------------------------------------------------
     with st.expander("Agent Activity Log", expanded=False):
         st.code("\n".join(st.session_state.log_lines), language=None)
 
@@ -373,6 +396,7 @@ elif not st.session_state.running:
     2. **Researcher Agent** — looks up real grocery prices for each ingredient
     3. **Nutritionist Agent** — verifies nutrition data via the USDA API
     4. **Critic Agent** — checks all constraints and requests revisions if needed
+    5. **Substitutor Agent** — if constraints still aren't met after 3 iterations, suggests targeted ingredient swaps
 
     Set your targets in the sidebar and click **Generate Plan** to start.
     """)

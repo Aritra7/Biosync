@@ -178,3 +178,7 @@ class EnrichedMealPlan(BaseModel):
     estimated_total_cost_usd: float
     validation_report: ValidationReport
     iterations_taken: int
+    substitution_suggestions: dict = Field(
+        default_factory=dict,
+        description="Substitutor agent output — ingredient swap suggestions when constraints not met"
+    )

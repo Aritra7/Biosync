@@ -14,6 +14,7 @@ from src.agents.planner import run_planner
 from src.agents.researcher import run_researcher
 from src.agents.nutritionist import run_nutritionist
 from src.agents.critic import run_critic
+from src.agents.substitutor import run_substitutor
 
 MAX_ITERATIONS = 3
 
@@ -85,11 +86,15 @@ def run_pipeline(
                 f"{'1 more attempt' if iteration == MAX_ITERATIONS - 1 else f'{MAX_ITERATIONS - iteration} attempts'} remaining."
             )
 
-    # Exhausted iterations — return best plan so far with failed validation
+    # Exhausted iterations — run substitutor for targeted swap suggestions
     if log_callback:
         log_callback(
             f"\nPipeline: Reached max iterations ({MAX_ITERATIONS}). "
-            "Returning best plan — some constraints may not be fully satisfied."
+            "Running Substitutor Agent for ingredient swap suggestions..."
         )
+    substitutions = run_substitutor(
+        enriched_plan, constraints, enriched_plan.validation_report, log_callback
+    )
+    enriched_plan.substitution_suggestions = substitutions
     enriched_plan.iterations_taken = MAX_ITERATIONS
     return enriched_plan

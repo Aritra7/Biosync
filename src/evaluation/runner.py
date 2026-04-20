@@ -198,12 +198,19 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Bio-Sync evaluation")
     parser.add_argument(
         "--mode",
-        choices=["initial", "full", "ablation"],
+        choices=["initial", "full", "ablation", "multimodel"],
         default="initial",
-        help="initial=10 profiles/biosync only, full=50 profiles/both, ablation=50/all three",
+        help=(
+            "initial=10 profiles/biosync only | "
+            "full=50 profiles/biosync+baseline | "
+            "ablation=10 profiles/all three systems | "
+            "multimodel=10 profiles/biosync across haiku+sonnet"
+        ),
     )
     parser.add_argument("--mock", action="store_true", default=True,
                         help="Use mock APIs (default True)")
+    parser.add_argument("--n", type=int, default=None,
+                        help="Override number of profiles (for quick tests)")
     args = parser.parse_args()
 
     if args.mock:
@@ -217,9 +224,34 @@ if __name__ == "__main__":
     elif args.mode == "full":
         profiles = TEST_PROFILES
         systems = ["biosync", "baseline"]
-    else:  # ablation
-        profiles = TEST_PROFILES
+    elif args.mode == "ablation":
+        # Ablation on first 10 profiles: biosync vs baseline vs no_critic
+        profiles = INITIAL_EVAL_PROFILES
         systems = ["biosync", "baseline", "no_critic"]
+    elif args.mode == "multimodel":
+        # Multi-model: run biosync with haiku and sonnet on first 10 profiles
+        # Each "system" name here is just a label; MODEL_OVERRIDE is set per run
+        # We run two separate evaluations and combine results
+        profiles = INITIAL_EVAL_PROFILES
+        results = {}
+        for model_key, model_id in [
+            ("sonnet", "claude-sonnet-4-6"),
+            ("haiku",  "claude-haiku-4-5-20251001"),
+        ]:
+            os.environ["MODEL_OVERRIDE"] = model_key
+            print(f"\n{'='*55}")
+            print(f"  Running with model: {model_id}")
+            print(f"{'='*55}")
+            out = run_evaluation(
+                profiles[:args.n] if args.n else profiles,
+                [f"biosync_{model_key}"],
+                f"eval_results/multimodel_{model_key}_{ts}.json",
+            )
+            results[model_key] = out
+        sys.exit(0)
+
+    if args.n:
+        profiles = profiles[:args.n]
 
     output_path = f"eval_results/{args.mode}_{ts}.json"
     run_evaluation(profiles, systems, output_path)
