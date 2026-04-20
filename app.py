@@ -147,23 +147,23 @@ if generate_btn and not st.session_state.running:
 # ---------------------------------------------------------------------------
 # Screen 2: Real-time agent activity log
 # ---------------------------------------------------------------------------
-if st.session_state.running:
-    st.title("Generating your meal plan...")
 
-    log_container = st.container()
+@st.fragment(run_every=0.75)
+def _log_poller():
+    """
+    Runs as an isolated fragment that auto-refreshes every 0.75s.
+    Only this region re-renders — the rest of the page is untouched,
+    eliminating the full-page flicker of the old st.rerun() loop.
+    """
+    log_q: queue.Queue = st.session_state.get("_log_q")
+    if log_q is None:
+        return
 
-    with log_container:
-        log_placeholder = st.empty()
-
-    # Drain the queue and update display
-    log_q: queue.Queue = st.session_state._log_q
-    done = False
-
-    while not done:
+    # Drain all messages currently in the queue
+    while True:
         try:
-            msg_type, payload = log_q.get(timeout=0.3)
+            msg_type, payload = log_q.get_nowait()
         except queue.Empty:
-            # Queue empty but thread still running — re-render and wait
             break
 
         if msg_type == "log":
@@ -171,20 +171,23 @@ if st.session_state.running:
         elif msg_type == "done":
             st.session_state.result = payload
             st.session_state.running = False
-            done = True
         elif msg_type == "error":
             st.session_state.error = payload
             st.session_state.running = False
-            done = True
 
-    # Render accumulated log
-    log_text = "\n".join(st.session_state.log_lines)
-    log_placeholder.code(log_text, language=None)
+    # Render the accumulated log
+    log_text = "\n".join(st.session_state.log_lines) if st.session_state.log_lines else "Starting agents..."
+    st.code(log_text, language=None)
 
-    if st.session_state.running:
-        st.rerun()
-    else:
-        st.rerun()  # flip to results screen
+    # When the pipeline finishes, do a single full-app rerun to show results
+    if not st.session_state.running:
+        st.rerun(scope="app")
+
+
+if st.session_state.running:
+    st.title("Generating your meal plan...")
+    st.caption("The agents are working — this usually takes 30–90 seconds.")
+    _log_poller()
 
 # ---------------------------------------------------------------------------
 # Helper: color-coded pass/fail badge
@@ -402,5 +405,3 @@ elif not st.session_state.running:
 
     Set your targets in the sidebar and click **Generate Plan** to start.
     """)
-
-    st.info("Currently running with **mock grocery/nutrition data**. Set `USE_MOCK_APIS=false` in `.env` once your API keys are ready.")
