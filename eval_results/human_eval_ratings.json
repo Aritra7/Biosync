@@ -1,0 +1,462 @@
+{
+  "1": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328757"
+    },
+    "rater_2": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328765"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328768"
+    }
+  },
+  "2": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328790"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328792"
+    },
+    "rater_3": {
+      "coherence": 4,
+      "variety": 3,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328793"
+    }
+  },
+  "3": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328810"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328811"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328812"
+    }
+  },
+  "4": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328832"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328834"
+    },
+    "rater_3": {
+      "coherence": 4,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328835"
+    }
+  },
+  "5": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328853"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328854"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328857"
+    }
+  },
+  "6": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328875"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328876"
+    },
+    "rater_3": {
+      "coherence": 4,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328877"
+    }
+  },
+  "7": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328893"
+    },
+    "rater_2": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328894"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328895"
+    }
+  },
+  "8": {
+    "rater_1": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328914"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328915"
+    },
+    "rater_3": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328916"
+    }
+  },
+  "9": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328930"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328932"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328933"
+    }
+  },
+  "10": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328949"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328950"
+    },
+    "rater_3": {
+      "coherence": 4,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328951"
+    }
+  },
+  "11": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328964"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328965"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328966"
+    }
+  },
+  "12": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328982"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328983"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328984"
+    }
+  },
+  "13": {
+    "rater_1": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328997"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.328998"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329000"
+    }
+  },
+  "14": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329016"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329017"
+    },
+    "rater_3": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329018"
+    }
+  },
+  "15": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329031"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329032"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329033"
+    }
+  },
+  "16": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329045"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329046"
+    },
+    "rater_3": {
+      "coherence": 4,
+      "variety": 3,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329047"
+    }
+  },
+  "17": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329061"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329062"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329063"
+    }
+  },
+  "18": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329080"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329081"
+    },
+    "rater_3": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329082"
+    }
+  },
+  "19": {
+    "rater_1": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329100"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329101"
+    },
+    "rater_3": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329103"
+    }
+  },
+  "20": {
+    "rater_1": {
+      "coherence": 4,
+      "variety": 3,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329316"
+    },
+    "rater_2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329318"
+    },
+    "rater_3": {
+      "coherence": 4,
+      "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-20T05:03:52.329319"
+    }
+  }
+}

@@ -1,0 +1,3571 @@
+[
+  {
+    "plan_id": 1,
+    "system": "biosync",
+    "profile_id": 1,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 180.0,
+        "carbs_g": 250.0,
+        "fat_g": 70.0,
+        "calories_kcal": 2400.0
+      },
+      "daily_budget_usd": 20.0,
+      "zip_code": "15213",
+      "dietary_preferences": "No shellfish. Prefer simple meals.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Yogurt Parfait with Oats and Banana",
+              "ingredients": [
+                {
+                  "name": "greek yogurt",
+                  "quantity_description": "100g (about 1/3 cup)"
+                },
+                {
+                  "name": "oats",
+                  "quantity_description": "80g (about 3/4 cup dry)"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1 small banana"
+                },
+                {
+                  "name": "honey",
+                  "quantity_description": "10g (1 tsp)"
+                }
+              ],
+              "cooking_instructions": [
+                "Combine oats with 160ml water and microwave for 2-3 minutes, stirring halfway.",
+                "Let oats cool slightly, then layer in a bowl with greek yogurt.",
+                "Top with sliced banana and drizzle honey over the top.",
+                "Serve immediately."
+              ],
+              "protein_g": 21.9,
+              "carbs_g": 80.2,
+              "fat_g": 6.2,
+              "calories_kcal": 451.2,
+              "cost_usd": 1.33
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken Rice Bowl with Broccoli",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "180g (1 medium breast)"
+                },
+                {
+                  "name": "brown rice",
+                  "quantity_description": "120g cooked (about 2/3 cup)"
+                },
+                {
+                  "name": "broccoli",
+                  "quantity_description": "150g (about 1.5 cups florets)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "10g (2 tsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "3g (about 1/2 tsp)"
+                },
+                {
+                  "name": "low sodium soy sauce",
+                  "quantity_description": "15g (1 tbsp)"
+                }
+              ],
+              "cooking_instructions": [
+                "Season chicken breast with garlic powder, salt, and pepper.",
+                "Heat olive oil in a pan over medium-high heat.",
+                "Cook chicken 6-7 minutes per side until internal temperature reaches 165F.",
+                "Steam broccoli for 4-5 minutes until tender-crisp.",
+                "Slice chicken and serve over brown rice with broccoli.",
+                "Drizzle soy sauce over the bowl before serving."
+              ],
+              "protein_g": 63.1,
+              "carbs_g": 38.1,
+              "fat_g": 18.2,
+              "calories_kcal": 570.8,
+              "cost_usd": 2.92
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Cod with Quinoa and Roasted Vegetables",
+              "ingredients": [
+                {
+                  "name": "cod fillet",
+                  "quantity_description": "200g fillet"
+                },
+                {
+                  "name": "quinoa",
+                  "quantity_description": "100g dry (about 1/2 cup)"
+                },
+                {
+                  "name": "zucchini",
+                  "quantity_description": "150g (1 medium zucchini)"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "100g (about 3/4 cup)"
+                },
+                {
+                  "name": "spinach",
+                  "quantity_description": "80g fresh spinach"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "10g (2 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "3g (about 1/2 tsp)"
+                },
+                {
+                  "name": "eggs",
+                  "quantity_description": "3 large eggs"
+                },
+                {
+                  "name": "low fat cottage cheese",
+                  "quantity_description": "150g (about 2/3 cup)"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400F.",
+                "Cook quinoa according to package instructions (1 part quinoa to 2 parts water, simmer 15 minutes).",
+                "Slice zucchini and halve cherry tomatoes. Toss with half the olive oil and roast on a baking sheet for 20 minutes.",
+                "Place cod fillet on a lined baking sheet, drizzle with remaining olive oil and lemon juice, season with garlic powder, salt, and pepper.",
+                "Bake cod for 15-18 minutes until it flakes easily with a fork.",
+                "Scramble eggs in a non-stick pan over medium heat for 2-3 minutes.",
+                "Wilt spinach in the same pan with a splash of water for 1-2 minutes.",
+                "Plate cod over quinoa with roasted vegetables, wilted spinach, and scrambled eggs on the side.",
+                "Add cottage cheese as a protein-rich side."
+              ],
+              "protein_g": 43.5,
+              "carbs_g": 94.4,
+              "fat_g": 22.0,
+              "calories_kcal": 718.8,
+              "cost_usd": 5.83
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 2,
+    "system": "baseline",
+    "profile_id": 1,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 180.0,
+        "carbs_g": 250.0,
+        "fat_g": 70.0,
+        "calories_kcal": 2400.0
+      },
+      "daily_budget_usd": 20.0,
+      "zip_code": "15213",
+      "dietary_preferences": "No shellfish. Prefer simple meals.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Yogurt Egg White Scramble with Oats",
+              "ingredients": [
+                {
+                  "name": "rolled oats (dry)",
+                  "quantity_description": "about 1 cup dry"
+                },
+                {
+                  "name": "liquid egg whites",
+                  "quantity_description": "about 1 cup"
+                },
+                {
+                  "name": "non-fat Greek yogurt",
+                  "quantity_description": "1 container (6 oz)"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1 medium banana"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 teaspoon"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook rolled oats with water in a small pot or microwave for 3-4 minutes until creamy.",
+                "Heat olive oil in a non-stick pan over medium heat.",
+                "Pour in liquid egg whites and stir gently until fully cooked, about 3-4 minutes.",
+                "Season egg whites with salt and pepper to taste.",
+                "Serve oats topped with Greek yogurt and sliced banana on the side."
+              ],
+              "protein_g": 55.0,
+              "carbs_g": 80.0,
+              "fat_g": 10.0,
+              "calories_kcal": 630.0,
+              "cost_usd": 2.08
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken Breast with Brown Rice and Steamed Broccoli",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken breast",
+                  "quantity_description": "about 10 oz raw"
+                },
+                {
+                  "name": "brown rice (dry)",
+                  "quantity_description": "about 1/2 cup dry"
+                },
+                {
+                  "name": "broccoli florets",
+                  "quantity_description": "about 2 cups"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "2 teaspoons"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "salt and pepper",
+                  "quantity_description": "to taste"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook brown rice according to package directions, approximately 40 minutes.",
+                "Season chicken breast with garlic powder, salt, and pepper.",
+                "Heat olive oil in a skillet or grill pan over medium-high heat.",
+                "Cook chicken breast 6-7 minutes per side until internal temperature reaches 165\u00b0F.",
+                "Steam broccoli florets in a pot with 1 inch of water, covered, for 4-5 minutes until tender.",
+                "Slice chicken and serve over brown rice with broccoli on the side."
+              ],
+              "protein_g": 72.0,
+              "carbs_g": 80.0,
+              "fat_g": 14.0,
+              "calories_kcal": 750.0,
+              "cost_usd": 2.58
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Lean Ground Turkey Taco Bowl",
+              "ingredients": [
+                {
+                  "name": "93% lean ground turkey",
+                  "quantity_description": "about 10 oz raw"
+                },
+                {
+                  "name": "canned black beans (drained)",
+                  "quantity_description": "about 1/2 cup"
+                },
+                {
+                  "name": "white rice (dry)",
+                  "quantity_description": "about 1/3 cup dry"
+                },
+                {
+                  "name": "romaine lettuce",
+                  "quantity_description": "1 cup shredded"
+                },
+                {
+                  "name": "salsa (jarred)",
+                  "quantity_description": "4 tablespoons"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 teaspoon"
+                },
+                {
+                  "name": "cumin",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "chili powder",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "salt and pepper",
+                  "quantity_description": "to taste"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook white rice according to package directions, about 18-20 minutes.",
+                "Heat olive oil in a skillet over medium-high heat.",
+                "Add ground turkey and cook, breaking it apart, for 7-8 minutes until fully browned.",
+                "Season turkey with cumin, chili powder, salt, and pepper.",
+                "Add drained black beans to the skillet and stir to combine, heat for 2 minutes.",
+                "Assemble bowl with rice on the bottom, then turkey and bean mixture, shredded lettuce, and salsa on top."
+              ],
+              "protein_g": 58.0,
+              "carbs_g": 85.0,
+              "fat_g": 16.0,
+              "calories_kcal": 730.0,
+              "cost_usd": 2.33
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 3,
+    "system": "biosync",
+    "profile_id": 2,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 200.0,
+        "carbs_g": 300.0,
+        "fat_g": 80.0,
+        "calories_kcal": 2800.0
+      },
+      "daily_budget_usd": 25.0,
+      "zip_code": "10001",
+      "dietary_preferences": "No pork. High protein focus.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Oatmeal Power Bowl with Eggs and Berries",
+              "ingredients": [
+                {
+                  "name": "oats",
+                  "quantity_description": "200g (about 2 cups dry)"
+                },
+                {
+                  "name": "egg",
+                  "quantity_description": "3 large eggs"
+                },
+                {
+                  "name": "blueberries",
+                  "quantity_description": "80g (about 1/2 cup)"
+                },
+                {
+                  "name": "honey",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "skim milk",
+                  "quantity_description": "120ml (1/2 cup)"
+                }
+              ],
+              "cooking_instructions": [
+                "Combine oats and skim milk with 200ml water in a saucepan over medium heat.",
+                "Stir and cook for 5-6 minutes until oats are thick and creamy.",
+                "In a separate non-stick pan, scramble the 3 eggs over medium heat until just set.",
+                "Transfer oatmeal to a bowl, drizzle with honey, and top with blueberries.",
+                "Serve scrambled eggs on the side."
+              ],
+              "protein_g": 46.5,
+              "carbs_g": 198.7,
+              "fat_g": 20.1,
+              "calories_kcal": 1128.5,
+              "cost_usd": 1.66
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "High-Protein Chicken Rice Bowl",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "290g (about 1.5 large breasts)"
+                },
+                {
+                  "name": "white rice",
+                  "quantity_description": "220g cooked (about 1 cup)"
+                },
+                {
+                  "name": "broccoli",
+                  "quantity_description": "150g (about 1.5 cups florets)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "10g (2 tsp)"
+                },
+                {
+                  "name": "low sodium soy sauce",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "3g (1/2 tsp)"
+                }
+              ],
+              "cooking_instructions": [
+                "Season chicken breast with garlic powder, salt, and pepper.",
+                "Heat olive oil in a skillet over medium-high heat.",
+                "Cook chicken 6-7 minutes per side until internal temperature reaches 165F.",
+                "Let chicken rest 3 minutes, then slice.",
+                "Steam broccoli for 4-5 minutes until tender-crisp.",
+                "Serve sliced chicken and broccoli over white rice, drizzle with soy sauce."
+              ],
+              "protein_g": 99.8,
+              "carbs_g": 61.1,
+              "fat_g": 23.0,
+              "calories_kcal": 864.3,
+              "cost_usd": 4.16
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Salmon with Roasted Sweet Potato and Spinach",
+              "ingredients": [
+                {
+                  "name": "salmon fillet",
+                  "quantity_description": "220g fillet"
+                },
+                {
+                  "name": "sweet potato",
+                  "quantity_description": "350g (about 1.5 medium sweet potatoes)"
+                },
+                {
+                  "name": "spinach",
+                  "quantity_description": "100g fresh spinach"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "10g (2 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "garlic",
+                  "quantity_description": "1 small clove, minced"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400F.",
+                "Peel and cube sweet potato into 1-inch pieces, toss with 5g olive oil and a pinch of salt.",
+                "Spread sweet potato on a baking sheet and roast for 25-28 minutes, flipping halfway.",
+                "Place salmon fillet on a lined baking sheet, drizzle with remaining 5g olive oil and lemon juice.",
+                "Bake salmon for 15-18 minutes until it flakes easily with a fork.",
+                "In the last 2 minutes, wilt spinach in a pan with minced garlic and a splash of water.",
+                "Plate salmon alongside roasted sweet potato and wilted spinach."
+              ],
+              "protein_g": 53.4,
+              "carbs_g": 74.0,
+              "fat_g": 40.2,
+              "calories_kcal": 870.0,
+              "cost_usd": 8.94
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 4,
+    "system": "baseline",
+    "profile_id": 2,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 200.0,
+        "carbs_g": 300.0,
+        "fat_g": 80.0,
+        "calories_kcal": 2800.0
+      },
+      "daily_budget_usd": 25.0,
+      "zip_code": "10001",
+      "dietary_preferences": "No pork. High protein focus.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Yogurt Protein Scrambled Eggs with Oats",
+              "ingredients": [
+                {
+                  "name": "large eggs",
+                  "quantity_description": "4 large eggs"
+                },
+                {
+                  "name": "non-fat Greek yogurt",
+                  "quantity_description": "1 container (6 oz)"
+                },
+                {
+                  "name": "rolled oats",
+                  "quantity_description": "1 cup dry oats"
+                },
+                {
+                  "name": "skim milk",
+                  "quantity_description": "1/2 cup"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1 medium banana"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 tsp"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "a pinch"
+                },
+                {
+                  "name": "honey",
+                  "quantity_description": "1 tsp"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook rolled oats in skim milk and water over medium heat for 5 minutes, stirring occasionally. Stir in honey and set aside.",
+                "Crack 4 eggs into a bowl, season with salt and pepper, and whisk until combined.",
+                "Heat olive oil in a non-stick pan over medium-low heat. Add eggs and gently scramble until just cooked through, about 3-4 minutes.",
+                "Serve scrambled eggs alongside the cooked oats. Top oats with sliced banana.",
+                "Serve Greek yogurt on the side or mix into oats for extra creaminess and protein."
+              ],
+              "protein_g": 52.0,
+              "carbs_g": 88.0,
+              "fat_g": 20.0,
+              "calories_kcal": 748.0,
+              "cost_usd": 2.28
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken Breast with Brown Rice and Steamed Broccoli",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken breast",
+                  "quantity_description": "2 medium chicken breasts (about 10 oz total)"
+                },
+                {
+                  "name": "brown rice (dry)",
+                  "quantity_description": "1/2 cup dry brown rice"
+                },
+                {
+                  "name": "broccoli florets",
+                  "quantity_description": "about 2 cups florets"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "2 tsp"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1 tsp"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "1/4 tsp"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1 tbsp"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook brown rice according to package instructions (approximately 35-40 minutes with 1 cup water per 1/2 cup rice).",
+                "Pound chicken breasts to an even thickness (about 3/4 inch). Season both sides with garlic powder, paprika, salt, and pepper.",
+                "Heat a grill pan or skillet over medium-high heat. Add olive oil. Cook chicken 5-6 minutes per side until internal temperature reaches 165\u00b0F.",
+                "While chicken rests, steam broccoli florets for 4-5 minutes until tender-crisp.",
+                "Slice chicken, drizzle with lemon juice, and serve over brown rice alongside steamed broccoli."
+              ],
+              "protein_g": 82.0,
+              "carbs_g": 88.0,
+              "fat_g": 14.0,
+              "calories_kcal": 814.0,
+              "cost_usd": 2.86
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Salmon with Sweet Potato and Asparagus",
+              "ingredients": [
+                {
+                  "name": "salmon fillet",
+                  "quantity_description": "1 large fillet (~9 oz)"
+                },
+                {
+                  "name": "sweet potato",
+                  "quantity_description": "1 large sweet potato"
+                },
+                {
+                  "name": "asparagus spears",
+                  "quantity_description": "about 10-12 spears"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 tbsp"
+                },
+                {
+                  "name": "garlic cloves",
+                  "quantity_description": "2 cloves, minced"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1 tbsp"
+                },
+                {
+                  "name": "dried dill",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "1/4 tsp"
+                },
+                {
+                  "name": "low-fat cottage cheese",
+                  "quantity_description": "1/2 cup (as a side protein boost)"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400\u00b0F (200\u00b0C). Pierce sweet potato several times with a fork. Microwave on high for 5-6 minutes until soft, or bake for 45 minutes.",
+                "Line a baking sheet with foil. Place salmon fillet skin-side down. Mix olive oil, garlic, lemon juice, dill, salt, and pepper and brush over salmon.",
+                "Arrange asparagus spears around the salmon on the baking sheet. Drizzle asparagus with any remaining olive oil mixture.",
+                "Bake salmon and asparagus for 12-15 minutes until salmon flakes easily with a fork and asparagus is tender.",
+                "Slice sweet potato open, season lightly with salt and pepper. Serve salmon alongside sweet potato and asparagus. Add cottage cheese on the side for extra protein."
+              ],
+              "protein_g": 68.0,
+              "carbs_g": 118.0,
+              "fat_g": 44.0,
+              "calories_kcal": 1148.0,
+              "cost_usd": 3.32
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": true
+  },
+  {
+    "plan_id": 5,
+    "system": "biosync",
+    "profile_id": 3,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 160.0,
+        "carbs_g": 200.0,
+        "fat_g": 65.0,
+        "calories_kcal": 2200.0
+      },
+      "daily_budget_usd": 18.0,
+      "zip_code": "90210",
+      "dietary_preferences": "Prefer Mediterranean style.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Walnut Blueberry Oat Bowl",
+              "ingredients": [
+                {
+                  "name": "rolled oats",
+                  "quantity_description": "80g (about 1 cup dry)"
+                },
+                {
+                  "name": "greek yogurt",
+                  "quantity_description": "150g (about 1/2 cup)"
+                },
+                {
+                  "name": "blueberries",
+                  "quantity_description": "80g (about 1/2 cup)"
+                },
+                {
+                  "name": "walnuts",
+                  "quantity_description": "55g (about 1/2 cup halves)"
+                },
+                {
+                  "name": "honey",
+                  "quantity_description": "10g (2 tsp)"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1 small banana"
+                }
+              ],
+              "cooking_instructions": [
+                "Combine oats with 200ml water in a saucepan and cook over medium heat for 5 minutes, stirring occasionally.",
+                "Transfer oats to a bowl and top with greek yogurt.",
+                "Add blueberries and sliced banana on top.",
+                "Sprinkle walnuts over the bowl and drizzle with honey.",
+                "Serve immediately."
+              ],
+              "protein_g": 26.7,
+              "carbs_g": 77.4,
+              "fat_g": 6.4,
+              "calories_kcal": 462.9,
+              "cost_usd": 1.67
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Mediterranean Chicken and Chickpea Bowl",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "180g (1 medium breast)"
+                },
+                {
+                  "name": "chickpeas",
+                  "quantity_description": "120g canned, drained (about 1/2 cup)"
+                },
+                {
+                  "name": "cucumber",
+                  "quantity_description": "100g (about 1/2 medium cucumber)"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "100g (about 8 tomatoes)"
+                },
+                {
+                  "name": "red onion",
+                  "quantity_description": "40g (about 1/4 medium onion)"
+                },
+                {
+                  "name": "feta cheese",
+                  "quantity_description": "40g (about 1/4 cup crumbled)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "18g (about 4 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "whole wheat pita",
+                  "quantity_description": "1 small pita"
+                }
+              ],
+              "cooking_instructions": [
+                "Season chicken breast with salt, pepper, and dried oregano.",
+                "Heat 8g olive oil in a pan over medium-high heat and cook chicken 6-7 minutes per side until internal temp reaches 165F.",
+                "Let chicken rest 5 minutes then slice.",
+                "In a bowl, combine chickpeas, diced cucumber, halved cherry tomatoes, and sliced red onion.",
+                "Whisk remaining olive oil with lemon juice, salt, and pepper to make dressing.",
+                "Toss vegetables and chickpeas with dressing.",
+                "Top with sliced chicken and crumbled feta.",
+                "Serve with whole wheat pita on the side."
+              ],
+              "protein_g": 68.3,
+              "carbs_g": 27.3,
+              "fat_g": 27.9,
+              "calories_kcal": 636.7,
+              "cost_usd": 2.85
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Herb Salmon with Lentils and Roasted Vegetables",
+              "ingredients": [
+                {
+                  "name": "salmon fillet",
+                  "quantity_description": "200g (1 large fillet)"
+                },
+                {
+                  "name": "green lentils",
+                  "quantity_description": "100g dry (about 1/2 cup)"
+                },
+                {
+                  "name": "zucchini",
+                  "quantity_description": "150g (1 medium zucchini)"
+                },
+                {
+                  "name": "bell pepper",
+                  "quantity_description": "120g (1 medium pepper)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "garlic",
+                  "quantity_description": "2 cloves"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1 tbsp"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "fresh parsley",
+                  "quantity_description": "small handful"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400F.",
+                "Rinse lentils and simmer in 300ml water with a pinch of salt for 20-25 minutes until tender, then drain.",
+                "Dice zucchini and bell pepper, toss with 8g olive oil, salt, and pepper on a baking sheet.",
+                "Roast vegetables for 20 minutes, flipping halfway.",
+                "Place salmon on a lined baking sheet, drizzle with remaining olive oil and lemon juice, sprinkle with oregano and minced garlic.",
+                "Bake salmon for 15-18 minutes until it flakes easily.",
+                "Toss cooked lentils with a squeeze of lemon and chopped parsley.",
+                "Plate salmon over lentils with roasted vegetables on the side."
+              ],
+              "protein_g": 49.8,
+              "carbs_g": 20.1,
+              "fat_g": 42.2,
+              "calories_kcal": 664.6,
+              "cost_usd": 5.0
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 6,
+    "system": "baseline",
+    "profile_id": 3,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 160.0,
+        "carbs_g": 200.0,
+        "fat_g": 65.0,
+        "calories_kcal": 2200.0
+      },
+      "daily_budget_usd": 18.0,
+      "zip_code": "90210",
+      "dietary_preferences": "Prefer Mediterranean style.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Yogurt Parfait with Oats and Berries",
+              "ingredients": [
+                {
+                  "name": "plain non-fat Greek yogurt",
+                  "quantity_description": "1 cup"
+                },
+                {
+                  "name": "rolled oats",
+                  "quantity_description": "1/2 cup dry"
+                },
+                {
+                  "name": "mixed frozen berries",
+                  "quantity_description": "1/2 cup"
+                },
+                {
+                  "name": "honey",
+                  "quantity_description": "1 tsp"
+                },
+                {
+                  "name": "almonds",
+                  "quantity_description": "small handful (~12 almonds)"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook rolled oats with 1 cup water over medium heat for 3-5 minutes, or microwave for 2 minutes. Let cool slightly.",
+                "Thaw frozen berries in microwave for 60 seconds or leave at room temperature.",
+                "In a bowl or glass, layer Greek yogurt, oats, and berries.",
+                "Drizzle honey on top and scatter almonds over the parfait.",
+                "Serve immediately."
+              ],
+              "protein_g": 30.0,
+              "carbs_g": 55.0,
+              "fat_g": 10.0,
+              "calories_kcal": 430.0,
+              "cost_usd": 1.31
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Mediterranean Tuna and Chickpea Salad",
+              "ingredients": [
+                {
+                  "name": "canned tuna in water",
+                  "quantity_description": "2 cans (5 oz each), drained"
+                },
+                {
+                  "name": "canned chickpeas",
+                  "quantity_description": "1/2 cup drained"
+                },
+                {
+                  "name": "cucumber",
+                  "quantity_description": "1/2 medium cucumber, diced"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "about 10 cherry tomatoes, halved"
+                },
+                {
+                  "name": "red onion",
+                  "quantity_description": "1/4 small red onion, thinly sliced"
+                },
+                {
+                  "name": "kalamata olives",
+                  "quantity_description": "6-8 olives"
+                },
+                {
+                  "name": "extra virgin olive oil",
+                  "quantity_description": "1 tbsp"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "juice of 1/2 lemon"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "salt and black pepper",
+                  "quantity_description": "to taste"
+                },
+                {
+                  "name": "whole wheat pita bread",
+                  "quantity_description": "1 pita"
+                }
+              ],
+              "cooking_instructions": [
+                "Drain and rinse canned tuna and chickpeas.",
+                "Dice cucumber and halve cherry tomatoes. Thinly slice red onion.",
+                "In a large bowl, combine tuna, chickpeas, cucumber, tomatoes, red onion, and olives.",
+                "Whisk together olive oil, lemon juice, oregano, salt, and pepper.",
+                "Pour dressing over salad and toss to combine.",
+                "Serve alongside warmed whole wheat pita bread."
+              ],
+              "protein_g": 65.0,
+              "carbs_g": 60.0,
+              "fat_g": 18.0,
+              "calories_kcal": 670.0,
+              "cost_usd": 2.31
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Lemon-Herb Chicken with Roasted Vegetables and Quinoa",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken breast",
+                  "quantity_description": "2 medium chicken breasts (~140g each)"
+                },
+                {
+                  "name": "quinoa dry",
+                  "quantity_description": "1/2 cup dry"
+                },
+                {
+                  "name": "zucchini",
+                  "quantity_description": "1 medium zucchini, sliced"
+                },
+                {
+                  "name": "bell pepper (red)",
+                  "quantity_description": "1 medium bell pepper, chopped"
+                },
+                {
+                  "name": "broccoli florets",
+                  "quantity_description": "1 cup florets"
+                },
+                {
+                  "name": "extra virgin olive oil",
+                  "quantity_description": "1.5 tbsp, divided"
+                },
+                {
+                  "name": "garlic cloves",
+                  "quantity_description": "2 cloves, minced"
+                },
+                {
+                  "name": "lemon",
+                  "quantity_description": "1 lemon, zested and juiced"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "dried thyme",
+                  "quantity_description": "1/4 tsp"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "salt and black pepper",
+                  "quantity_description": "to taste"
+                },
+                {
+                  "name": "fresh parsley",
+                  "quantity_description": "small handful, chopped, for garnish"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400\u00b0F (200\u00b0C). Line a large baking sheet with foil.",
+                "Rinse quinoa under cold water. Combine with 1 cup water in a small saucepan, bring to a boil, reduce heat, cover, and simmer for 15 minutes until water is absorbed. Fluff with a fork.",
+                "In a small bowl, whisk together 1 tbsp olive oil, minced garlic, lemon zest, lemon juice, oregano, thyme, paprika, salt, and pepper.",
+                "Place chicken breasts on one side of the baking sheet. Spoon half the marinade over chicken and rub to coat.",
+                "In a large bowl, toss zucchini, bell pepper, and broccoli with remaining olive oil, remaining marinade, salt, and pepper. Spread vegetables on the other side of the baking sheet.",
+                "Bake for 22-26 minutes, or until chicken reaches an internal temperature of 165\u00b0F (74\u00b0C) and vegetables are tender and slightly caramelized.",
+                "Let chicken rest 3 minutes before slicing.",
+                "Serve sliced chicken over quinoa with roasted vegetables. Garnish with fresh parsley."
+              ],
+              "protein_g": 68.0,
+              "carbs_g": 82.0,
+              "fat_g": 37.0,
+              "calories_kcal": 940.0,
+              "cost_usd": 2.9
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": true
+  },
+  {
+    "plan_id": 7,
+    "system": "biosync",
+    "profile_id": 4,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 190.0,
+        "carbs_g": 280.0,
+        "fat_g": 75.0,
+        "calories_kcal": 2700.0
+      },
+      "daily_budget_usd": 22.0,
+      "zip_code": "77001",
+      "dietary_preferences": "No dairy. High protein.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Oatmeal with Almond Butter, Banana, and Egg Whites",
+              "ingredients": [
+                {
+                  "name": "oats",
+                  "quantity_description": "120g (about 1.25 cups dry)"
+                },
+                {
+                  "name": "almond butter",
+                  "quantity_description": "30g (about 2 tbsp)"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1 medium banana"
+                },
+                {
+                  "name": "egg whites",
+                  "quantity_description": "6 large egg whites (about 180g)"
+                },
+                {
+                  "name": "cinnamon",
+                  "quantity_description": "1/2 tsp ground cinnamon"
+                }
+              ],
+              "cooking_instructions": [
+                "Combine oats with 240ml water in a saucepan, bring to a boil, then simmer 5 minutes stirring occasionally.",
+                "While oats cook, scramble egg whites in a nonstick pan over medium heat until just set, about 3-4 minutes.",
+                "Stir almond butter and cinnamon into the cooked oatmeal.",
+                "Slice banana and stir half into oatmeal, place the other half on top.",
+                "Serve oatmeal alongside scrambled egg whites."
+              ],
+              "protein_g": 17.6,
+              "carbs_g": 108.0,
+              "fat_g": 8.8,
+              "calories_kcal": 565.1,
+              "cost_usd": 0.8
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Ground Turkey Rice Bowl with Black Beans and Peppers",
+              "ingredients": [
+                {
+                  "name": "ground turkey",
+                  "quantity_description": "300g (about 10.5 oz)"
+                },
+                {
+                  "name": "brown rice",
+                  "quantity_description": "280g cooked (about 1.5 cups)"
+                },
+                {
+                  "name": "black beans",
+                  "quantity_description": "170g cooked (about 3/4 cup)"
+                },
+                {
+                  "name": "bell pepper",
+                  "quantity_description": "1 large bell pepper"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "10g (2 tsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1 tsp garlic powder"
+                },
+                {
+                  "name": "cumin",
+                  "quantity_description": "1 tsp cumin"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "1/3 tsp salt"
+                }
+              ],
+              "cooking_instructions": [
+                "Heat olive oil in a large skillet over medium-high heat.",
+                "Add diced bell pepper and saut\u00e9 3 minutes until slightly softened.",
+                "Add ground turkey, breaking it apart, and cook 7-8 minutes until browned and cooked through.",
+                "Season with garlic powder, cumin, and salt; stir to combine.",
+                "Add black beans and stir together for 2 minutes to warm through.",
+                "Serve turkey and bean mixture over cooked brown rice."
+              ],
+              "protein_g": 83.0,
+              "carbs_g": 104.7,
+              "fat_g": 43.7,
+              "calories_kcal": 1159.7,
+              "cost_usd": 5.97
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Chicken Breast with Roasted Sweet Potato and Steamed Broccoli",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "310g (about 1.5 medium breasts)"
+                },
+                {
+                  "name": "sweet potato",
+                  "quantity_description": "1 medium sweet potato"
+                },
+                {
+                  "name": "broccoli",
+                  "quantity_description": "150g (about 1.5 cups florets)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "18g (about 1.5 tbsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1 tsp garlic powder"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1 tsp paprika"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "1/3 tsp salt"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "1/4 tsp black pepper"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400\u00b0F (205\u00b0C).",
+                "Cube sweet potato into 1-inch pieces, toss with 8g olive oil, and spread on a lined baking sheet.",
+                "Roast sweet potato 20 minutes, flip once halfway through.",
+                "Rub chicken breast with remaining 10g olive oil, garlic powder, paprika, salt, and pepper.",
+                "Add chicken breast to the oven alongside sweet potato for the final 20-25 minutes until internal temperature reaches 165\u00b0F.",
+                "Steam broccoli florets over boiling water for 4-5 minutes until tender-crisp.",
+                "Slice chicken and plate with roasted sweet potato and steamed broccoli."
+              ],
+              "protein_g": 103.9,
+              "carbs_g": 55.0,
+              "fat_g": 30.0,
+              "calories_kcal": 912.1,
+              "cost_usd": 4.79
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": true
+  },
+  {
+    "plan_id": 8,
+    "system": "baseline",
+    "profile_id": 4,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 190.0,
+        "carbs_g": 280.0,
+        "fat_g": 75.0,
+        "calories_kcal": 2700.0
+      },
+      "daily_budget_usd": 22.0,
+      "zip_code": "77001",
+      "dietary_preferences": "No dairy. High protein.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Egg White and Turkey Veggie Scramble with Oats",
+              "ingredients": [
+                {
+                  "name": "liquid egg whites",
+                  "quantity_description": "1 cup"
+                },
+                {
+                  "name": "lean ground turkey (93/7)",
+                  "quantity_description": "3 oz"
+                },
+                {
+                  "name": "spinach",
+                  "quantity_description": "2 cups loosely packed"
+                },
+                {
+                  "name": "bell pepper",
+                  "quantity_description": "half a medium bell pepper, diced"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1.5 tsp"
+                },
+                {
+                  "name": "rolled oats (dry)",
+                  "quantity_description": "1 cup dry"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1 medium banana"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "pinch"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "pinch"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/4 tsp"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook rolled oats with water according to package instructions and set aside.",
+                "Heat olive oil in a non-stick skillet over medium-high heat.",
+                "Add ground turkey and cook until browned, breaking it up, about 5 minutes.",
+                "Add diced bell pepper and cook 2 minutes until slightly softened.",
+                "Add spinach and stir until wilted, about 1 minute.",
+                "Pour in egg whites, season with salt, black pepper, and garlic powder, and scramble everything together until egg whites are fully cooked.",
+                "Serve scramble alongside the cooked oatmeal topped with sliced banana."
+              ],
+              "protein_g": 62.0,
+              "carbs_g": 82.0,
+              "fat_g": 14.0,
+              "calories_kcal": 706.0,
+              "cost_usd": 2.34
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken Rice Bowl with Black Beans and Salsa",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken breast",
+                  "quantity_description": "about 7 oz"
+                },
+                {
+                  "name": "white rice (dry)",
+                  "quantity_description": "1/2 cup dry"
+                },
+                {
+                  "name": "canned black beans (drained and rinsed)",
+                  "quantity_description": "1/2 cup"
+                },
+                {
+                  "name": "salsa (store-bought, no dairy)",
+                  "quantity_description": "1/3 cup"
+                },
+                {
+                  "name": "romaine lettuce",
+                  "quantity_description": "1 cup chopped"
+                },
+                {
+                  "name": "lime juice",
+                  "quantity_description": "juice of half a lime"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1.5 tsp"
+                },
+                {
+                  "name": "cumin",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "chili powder",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "1/4 tsp"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook rice according to package instructions and fluff with a fork.",
+                "Season chicken breast with cumin, chili powder, salt, and black pepper.",
+                "Heat olive oil in a skillet or grill pan over medium-high heat.",
+                "Cook chicken 6-7 minutes per side until internal temperature reaches 165\u00b0F. Let rest 3 minutes, then slice.",
+                "Warm black beans in a small saucepan or microwave for 1-2 minutes.",
+                "Assemble bowl: rice on the bottom, then sliced chicken, black beans, and romaine.",
+                "Top with salsa and squeeze lime juice over everything."
+              ],
+              "protein_g": 68.0,
+              "carbs_g": 98.0,
+              "fat_g": 11.0,
+              "calories_kcal": 775.0,
+              "cost_usd": 2.57
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Tilapia with Sweet Potato and Steamed Broccoli",
+              "ingredients": [
+                {
+                  "name": "tilapia fillets",
+                  "quantity_description": "2 fillets, about 5 oz each"
+                },
+                {
+                  "name": "sweet potato",
+                  "quantity_description": "1 large sweet potato"
+                },
+                {
+                  "name": "broccoli florets",
+                  "quantity_description": "about 2 cups"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 tbsp"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "juice of half a lemon"
+                },
+                {
+                  "name": "garlic",
+                  "quantity_description": "2 cloves, minced"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "1/4 tsp"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "1/4 tsp"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400\u00b0F. Pierce sweet potato with a fork and place on a baking sheet. Bake 45-50 minutes until tender.",
+                "About 15 minutes before sweet potato is done, prepare the tilapia.",
+                "Place tilapia fillets on a foil-lined baking sheet. Mix olive oil, lemon juice, minced garlic, paprika, oregano, salt, and pepper. Brush over fillets.",
+                "Bake tilapia at 400\u00b0F for 12-14 minutes until fish flakes easily with a fork.",
+                "While fish bakes, steam broccoli florets in a steamer basket over boiling water for 5-6 minutes until tender-crisp.",
+                "Serve tilapia alongside halved sweet potato and steamed broccoli. Season broccoli with a pinch of salt if desired."
+              ],
+              "protein_g": 62.0,
+              "carbs_g": 98.0,
+              "fat_g": 17.0,
+              "calories_kcal": 797.0,
+              "cost_usd": 2.52
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 9,
+    "system": "biosync",
+    "profile_id": 5,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 175.0,
+        "carbs_g": 220.0,
+        "fat_g": 60.0,
+        "calories_kcal": 2300.0
+      },
+      "daily_budget_usd": 15.0,
+      "zip_code": "60601",
+      "dietary_preferences": "Budget-friendly, easy to cook.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Scrambled Eggs with Toast and Orange Juice",
+              "ingredients": [
+                {
+                  "name": "eggs",
+                  "quantity_description": "5 large eggs"
+                },
+                {
+                  "name": "whole milk",
+                  "quantity_description": "2 tbsp"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "22g (about 1.5 tbsp)"
+                },
+                {
+                  "name": "whole wheat bread",
+                  "quantity_description": "2 slices"
+                },
+                {
+                  "name": "orange juice",
+                  "quantity_description": "1 cup (240ml)"
+                }
+              ],
+              "cooking_instructions": [
+                "Crack eggs into a bowl, add milk, and whisk until combined.",
+                "Heat olive oil in a non-stick pan over medium-low heat.",
+                "Pour in egg mixture and gently stir with a spatula, folding curds until just set, about 3-4 minutes.",
+                "Season with salt and pepper.",
+                "Toast whole wheat bread slices.",
+                "Serve scrambled eggs alongside toast and a glass of orange juice."
+              ],
+              "protein_g": 45.6,
+              "carbs_g": 146.5,
+              "fat_g": 36.3,
+              "calories_kcal": 1034.3,
+              "cost_usd": 2.37
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Canned Tuna Rice Bowl with Black Beans",
+              "ingredients": [
+                {
+                  "name": "canned tuna in water",
+                  "quantity_description": "1 can (6oz), drained"
+                },
+                {
+                  "name": "white rice",
+                  "quantity_description": "140g dry (about 3/4 cup)"
+                },
+                {
+                  "name": "canned black beans",
+                  "quantity_description": "130g (about 1/2 cup drained)"
+                },
+                {
+                  "name": "frozen corn",
+                  "quantity_description": "80g (about 1/2 cup)"
+                },
+                {
+                  "name": "salsa",
+                  "quantity_description": "4 tbsp"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "10g (2 tsp)"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook white rice according to package directions (combine 140g dry rice with 280ml water, bring to boil, cover and simmer 18 minutes).",
+                "Drain and rinse canned black beans.",
+                "Microwave frozen corn for 2 minutes.",
+                "Drain tuna and flake into a bowl.",
+                "Combine cooked rice, black beans, corn, and tuna in a bowl.",
+                "Drizzle with olive oil, top with salsa, and stir to combine.",
+                "Season with salt and pepper to taste."
+              ],
+              "protein_g": 58.6,
+              "carbs_g": 63.0,
+              "fat_g": 13.3,
+              "calories_kcal": 602.1,
+              "cost_usd": 2.7
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Chicken Breast with Roasted Potatoes and Green Beans",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "220g (about 1 large breast)"
+                },
+                {
+                  "name": "russet potato",
+                  "quantity_description": "1 large potato, cubed"
+                },
+                {
+                  "name": "green beans",
+                  "quantity_description": "150g fresh or frozen"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "18g (about 1.5 tbsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1 tsp"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "3/4 tsp"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400F.",
+                "Cube russet potato and toss with 10g olive oil, garlic powder, paprika, salt and pepper.",
+                "Spread potatoes on a lined baking sheet and roast for 20 minutes.",
+                "Rub chicken breast with remaining 8g olive oil, garlic powder, salt and pepper.",
+                "After potatoes have roasted 20 minutes, push them to one side and add chicken breast to the pan.",
+                "Roast chicken and potatoes together for an additional 22-25 minutes until chicken reaches 165F internal temperature.",
+                "Steam or microwave green beans for 4-5 minutes until tender.",
+                "Slice chicken and plate with roasted potatoes and green beans."
+              ],
+              "protein_g": 86.3,
+              "carbs_g": 95.8,
+              "fat_g": 27.0,
+              "calories_kcal": 978.1,
+              "cost_usd": 2.52
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 10,
+    "system": "baseline",
+    "profile_id": 5,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 175.0,
+        "carbs_g": 220.0,
+        "fat_g": 60.0,
+        "calories_kcal": 2300.0
+      },
+      "daily_budget_usd": 15.0,
+      "zip_code": "60601",
+      "dietary_preferences": "Budget-friendly, easy to cook.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Yogurt Oatmeal Power Bowl",
+              "ingredients": [
+                {
+                  "name": "rolled oats (dry)",
+                  "quantity_description": "about 1 cup dry"
+                },
+                {
+                  "name": "non-fat plain Greek yogurt",
+                  "quantity_description": "1 container (6 oz)"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1 medium banana"
+                },
+                {
+                  "name": "honey",
+                  "quantity_description": "1/2 tablespoon"
+                },
+                {
+                  "name": "whole eggs",
+                  "quantity_description": "2 large eggs"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook rolled oats with 1.5 cups water in a small saucepan over medium heat for 5 minutes, stirring occasionally, until thick and creamy.",
+                "While oats cook, scramble 2 eggs in a non-stick pan with a quick spray of oil over medium heat for 2-3 minutes.",
+                "Slice the banana. Top the oatmeal with Greek yogurt, banana slices, and honey.",
+                "Serve scrambled eggs alongside the oatmeal bowl."
+              ],
+              "protein_g": 42.0,
+              "carbs_g": 75.0,
+              "fat_g": 11.0,
+              "calories_kcal": 570.0,
+              "cost_usd": 1.77
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Canned Tuna & White Bean Rice Bowl",
+              "ingredients": [
+                {
+                  "name": "canned tuna in water (drained)",
+                  "quantity_description": "2 cans (5 oz each)"
+                },
+                {
+                  "name": "canned white beans (rinsed and drained)",
+                  "quantity_description": "about 3/4 cup"
+                },
+                {
+                  "name": "white rice (dry)",
+                  "quantity_description": "about 1/3 cup dry"
+                },
+                {
+                  "name": "baby spinach",
+                  "quantity_description": "2 large handfuls"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1/2 tablespoon"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1 tablespoon"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "salt and black pepper",
+                  "quantity_description": "to taste"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook rice according to package instructions (typically 1 part rice to 2 parts water, bring to boil, reduce heat, cover and simmer 18 minutes).",
+                "Drain and rinse canned tuna and white beans.",
+                "In a bowl, combine tuna, white beans, lemon juice, olive oil, garlic powder, salt, and pepper. Mix well.",
+                "Place spinach in the bottom of a serving bowl, top with hot rice (which will slightly wilt the spinach), then add the tuna and bean mixture on top.",
+                "Toss everything together and serve."
+              ],
+              "protein_g": 72.0,
+              "carbs_g": 75.0,
+              "fat_g": 9.0,
+              "calories_kcal": 680.0,
+              "cost_usd": 2.44
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Chicken Breast with Roasted Potatoes and Green Beans",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken breast",
+                  "quantity_description": "1 large breast (~7-8 oz)"
+                },
+                {
+                  "name": "russet potatoes",
+                  "quantity_description": "2 medium potatoes"
+                },
+                {
+                  "name": "frozen green beans",
+                  "quantity_description": "about 1.5 cups"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 tablespoon"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "dried Italian seasoning",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "salt and black pepper",
+                  "quantity_description": "to taste"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 425\u00b0F (220\u00b0C). Line a large baking sheet with foil.",
+                "Cut potatoes into 1-inch cubes. Toss with half the olive oil, garlic powder, paprika, salt, and pepper. Spread on one side of the baking sheet.",
+                "Place potatoes in oven and roast for 15 minutes.",
+                "Meanwhile, pat chicken breast dry. Rub with remaining olive oil, Italian seasoning, garlic powder, salt, and pepper.",
+                "After potatoes have roasted 15 minutes, push them to one side. Add chicken breast and frozen green beans to the pan.",
+                "Continue roasting for 20-25 minutes, or until chicken internal temperature reaches 165\u00b0F and potatoes are golden and tender.",
+                "Let chicken rest 5 minutes before slicing. Serve with potatoes and green beans."
+              ],
+              "protein_g": 58.0,
+              "carbs_g": 65.0,
+              "fat_g": 18.0,
+              "calories_kcal": 650.0,
+              "cost_usd": 2.17
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 11,
+    "system": "biosync",
+    "profile_id": 6,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 150.0,
+        "carbs_g": 120.0,
+        "fat_g": 45.0,
+        "calories_kcal": 1500.0
+      },
+      "daily_budget_usd": 12.0,
+      "zip_code": "30301",
+      "dietary_preferences": "No shellfish. Low carb preferred.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Egg White Oatmeal Bowl",
+              "ingredients": [
+                {
+                  "name": "egg whites",
+                  "quantity_description": "240g (about 8 large egg whites)"
+                },
+                {
+                  "name": "rolled oats",
+                  "quantity_description": "90g (about 1 cup dry)"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1/2 medium banana"
+                },
+                {
+                  "name": "cinnamon",
+                  "quantity_description": "1/2 tsp ground cinnamon"
+                }
+              ],
+              "cooking_instructions": [
+                "Combine rolled oats with 180ml water in a saucepan and cook over medium heat for 5 minutes, stirring occasionally.",
+                "In a separate nonstick pan, cook egg whites over medium heat, stirring until fully set, about 3-4 minutes.",
+                "Slice banana and layer on top of oatmeal.",
+                "Sprinkle cinnamon over oatmeal and serve egg whites on the side."
+              ],
+              "protein_g": 12.9,
+              "carbs_g": 74.1,
+              "fat_g": 6.6,
+              "calories_kcal": 398.0,
+              "cost_usd": 0.53
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken and Brown Rice Bowl with Broccoli",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "200g (1 large breast)"
+                },
+                {
+                  "name": "brown rice",
+                  "quantity_description": "175g cooked (about 3/4 cup)"
+                },
+                {
+                  "name": "broccoli",
+                  "quantity_description": "150g (about 1.5 cups florets)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "8g (about 1.5 tsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/2 tsp garlic powder"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch of salt"
+                }
+              ],
+              "cooking_instructions": [
+                "Season chicken breast with garlic powder and salt.",
+                "Heat olive oil in a skillet over medium-high heat.",
+                "Cook chicken 6-7 minutes per side until internal temperature reaches 165F.",
+                "Steam broccoli for 4-5 minutes until tender-crisp.",
+                "Slice chicken and serve over cooked brown rice with broccoli on the side."
+              ],
+              "protein_g": 70.8,
+              "carbs_g": 50.8,
+              "fat_g": 17.4,
+              "calories_kcal": 647.7,
+              "cost_usd": 3.22
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Tilapia with Asparagus and Cauliflower Rice",
+              "ingredients": [
+                {
+                  "name": "tilapia fillet",
+                  "quantity_description": "250g (about 2 medium fillets)"
+                },
+                {
+                  "name": "asparagus",
+                  "quantity_description": "150g (about 10 spears)"
+                },
+                {
+                  "name": "cauliflower rice",
+                  "quantity_description": "200g (about 1 cup)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "8g (about 1.5 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1 tbsp fresh lemon juice"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "a pinch of black pepper"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 tsp paprika"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400F.",
+                "Place tilapia fillets on a lined baking sheet, drizzle with half the olive oil, lemon juice, paprika, and black pepper.",
+                "Lay asparagus alongside tilapia, drizzle with remaining olive oil.",
+                "Bake for 15-18 minutes until fish flakes easily and asparagus is tender.",
+                "While fish bakes, heat cauliflower rice in a nonstick pan over medium heat for 4-5 minutes, stirring until heated through.",
+                "Plate tilapia over cauliflower rice with asparagus on the side."
+              ],
+              "protein_g": 50.3,
+              "carbs_g": 0.2,
+              "fat_g": 12.3,
+              "calories_kcal": 312.0,
+              "cost_usd": 2.67
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 12,
+    "system": "baseline",
+    "profile_id": 6,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 150.0,
+        "carbs_g": 120.0,
+        "fat_g": 45.0,
+        "calories_kcal": 1500.0
+      },
+      "daily_budget_usd": 12.0,
+      "zip_code": "30301",
+      "dietary_preferences": "No shellfish. Low carb preferred.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Scrambled Eggs with Spinach and Turkey",
+              "ingredients": [
+                {
+                  "name": "large eggs",
+                  "quantity_description": "3 large eggs"
+                },
+                {
+                  "name": "ground turkey (93% lean)",
+                  "quantity_description": "3 oz ground turkey"
+                },
+                {
+                  "name": "fresh spinach",
+                  "quantity_description": "2 cups fresh spinach"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 tsp olive oil"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "pinch of salt"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "pinch of black pepper"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/4 tsp garlic powder"
+                }
+              ],
+              "cooking_instructions": [
+                "Heat a non-stick skillet over medium heat and add olive oil.",
+                "Add ground turkey and cook, breaking it apart, for about 5 minutes until browned.",
+                "Add spinach and cook until wilted, about 1-2 minutes.",
+                "Crack eggs into a bowl, whisk with salt, pepper, and garlic powder.",
+                "Pour eggs over the turkey and spinach mixture.",
+                "Stir gently over medium-low heat until eggs are just set, about 2-3 minutes.",
+                "Serve immediately."
+              ],
+              "protein_g": 42.0,
+              "carbs_g": 3.0,
+              "fat_g": 16.0,
+              "calories_kcal": 318.0,
+              "cost_usd": 1.27
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken Salad with Avocado",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken breast",
+                  "quantity_description": "6 oz chicken breast"
+                },
+                {
+                  "name": "romaine lettuce",
+                  "quantity_description": "2 cups chopped romaine"
+                },
+                {
+                  "name": "avocado",
+                  "quantity_description": "1/2 medium avocado"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "1/2 cup cherry tomatoes"
+                },
+                {
+                  "name": "cucumber",
+                  "quantity_description": "1/2 cup sliced cucumber"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1.5 tsp olive oil"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "2 tsp lemon juice"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "pinch of salt"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "pinch of black pepper"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "1/4 tsp dried oregano"
+                }
+              ],
+              "cooking_instructions": [
+                "Season chicken breast with salt, pepper, and oregano.",
+                "Heat a grill pan or skillet over medium-high heat with a little cooking spray.",
+                "Grill chicken for 6-7 minutes per side until internal temperature reaches 165\u00b0F.",
+                "Let chicken rest 5 minutes, then slice.",
+                "In a large bowl, combine romaine, cherry tomatoes, and cucumber.",
+                "Top with sliced chicken and diced avocado.",
+                "Drizzle with olive oil and lemon juice, toss lightly and serve."
+              ],
+              "protein_g": 55.0,
+              "carbs_g": 12.0,
+              "fat_g": 17.0,
+              "calories_kcal": 425.0,
+              "cost_usd": 1.67
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Tilapia with Roasted Broccoli and Cauliflower",
+              "ingredients": [
+                {
+                  "name": "tilapia fillets",
+                  "quantity_description": "2 medium tilapia fillets (~7 oz)"
+                },
+                {
+                  "name": "broccoli florets",
+                  "quantity_description": "1.5 cups broccoli florets"
+                },
+                {
+                  "name": "cauliflower florets",
+                  "quantity_description": "1.5 cups cauliflower florets"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1.5 tsp olive oil"
+                },
+                {
+                  "name": "garlic",
+                  "quantity_description": "2 cloves garlic, minced"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1 tbsp lemon juice"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 tsp paprika"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "1/4 tsp salt"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "1/4 tsp black pepper"
+                },
+                {
+                  "name": "dried parsley",
+                  "quantity_description": "1/2 tsp dried parsley"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400\u00b0F (200\u00b0C). Line a baking sheet with foil.",
+                "Toss broccoli and cauliflower florets with half the olive oil, salt, and pepper. Spread on one side of the baking sheet.",
+                "Roast vegetables for 10 minutes.",
+                "Meanwhile, pat tilapia fillets dry and place on the other side of the baking sheet.",
+                "Mix remaining olive oil, lemon juice, garlic, paprika, salt, pepper, and parsley. Brush over fillets.",
+                "Return baking sheet to oven and bake everything for an additional 12-15 minutes until fish flakes easily with a fork.",
+                "Serve tilapia alongside the roasted vegetables."
+              ],
+              "protein_g": 52.0,
+              "carbs_g": 18.0,
+              "fat_g": 11.0,
+              "calories_kcal": 377.0,
+              "cost_usd": 1.53
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 13,
+    "system": "biosync",
+    "profile_id": 7,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 140.0,
+        "carbs_g": 100.0,
+        "fat_g": 40.0,
+        "calories_kcal": 1400.0
+      },
+      "daily_budget_usd": 10.0,
+      "zip_code": "98101",
+      "dietary_preferences": "Gluten-free. Low calorie.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Egg White Scramble with Spinach and Greek Yogurt",
+              "ingredients": [
+                {
+                  "name": "egg whites",
+                  "quantity_description": "350g (about 11-12 egg whites)"
+                },
+                {
+                  "name": "fresh spinach",
+                  "quantity_description": "80g (about 2 large handfuls)"
+                },
+                {
+                  "name": "non-fat greek yogurt",
+                  "quantity_description": "150g (about 2/3 cup)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "5g (1 tsp)"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "a pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Heat olive oil in a non-stick skillet over medium heat.",
+                "Add fresh spinach and saut\u00e9 for 1-2 minutes until wilted.",
+                "Pour in egg whites, season with salt and pepper.",
+                "Scramble gently with a spatula until fully cooked, about 3-4 minutes.",
+                "Serve egg white scramble alongside non-fat Greek yogurt."
+              ],
+              "protein_g": 17.7,
+              "carbs_g": 8.5,
+              "fat_g": 5.9,
+              "calories_kcal": 152.4,
+              "cost_usd": 3.19
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken and Brown Rice Bowl with Cucumber",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "320g (about 2 medium breasts)"
+                },
+                {
+                  "name": "brown rice",
+                  "quantity_description": "60g dry (about 1/3 cup)"
+                },
+                {
+                  "name": "cucumber",
+                  "quantity_description": "100g (about half a medium cucumber)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "5g (1 tsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "a pinch"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook brown rice according to package instructions (about 30 minutes).",
+                "Season chicken breast with garlic powder, salt, and lemon juice.",
+                "Heat olive oil in a grill pan over medium-high heat.",
+                "Cook chicken 6-7 minutes per side until internal temperature reaches 165F.",
+                "Slice cucumber and set aside.",
+                "Serve sliced chicken over cooked rice with cucumber on the side."
+              ],
+              "protein_g": 100.8,
+              "carbs_g": 13.8,
+              "fat_g": 17.1,
+              "calories_kcal": 639.4,
+              "cost_usd": 3.05
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Cod with Steamed Broccoli and Edamame",
+              "ingredients": [
+                {
+                  "name": "cod fillet",
+                  "quantity_description": "350g (about 2 medium fillets)"
+                },
+                {
+                  "name": "broccoli",
+                  "quantity_description": "150g (about 1.5 cups florets)"
+                },
+                {
+                  "name": "edamame",
+                  "quantity_description": "100g shelled (about 2/3 cup)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "5g (1 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "a pinch"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "a pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400F.",
+                "Place cod fillets on a lined baking sheet.",
+                "Drizzle with olive oil and lemon juice, season with garlic powder, salt, and pepper.",
+                "Bake cod for 15-18 minutes until it flakes easily with a fork.",
+                "Steam broccoli florets for 4-5 minutes until tender.",
+                "Heat edamame according to package instructions (microwave 2-3 minutes).",
+                "Plate cod alongside steamed broccoli and edamame."
+              ],
+              "protein_g": 4.3,
+              "carbs_g": 10.7,
+              "fat_g": 5.6,
+              "calories_kcal": 96.5,
+              "cost_usd": 0.94
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 14,
+    "system": "baseline",
+    "profile_id": 7,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 140.0,
+        "carbs_g": 100.0,
+        "fat_g": 40.0,
+        "calories_kcal": 1400.0
+      },
+      "daily_budget_usd": 10.0,
+      "zip_code": "98101",
+      "dietary_preferences": "Gluten-free. Low calorie.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Yogurt Egg White Scramble with Berries",
+              "ingredients": [
+                {
+                  "name": "liquid egg whites",
+                  "quantity_description": "1 cup"
+                },
+                {
+                  "name": "non-fat plain Greek yogurt",
+                  "quantity_description": "2/3 cup"
+                },
+                {
+                  "name": "fresh strawberries",
+                  "quantity_description": "about 7 medium strawberries"
+                },
+                {
+                  "name": "spinach",
+                  "quantity_description": "1 cup loosely packed"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "a pinch"
+                },
+                {
+                  "name": "cooking spray (olive oil)",
+                  "quantity_description": "1 quick spray"
+                }
+              ],
+              "cooking_instructions": [
+                "Heat a non-stick skillet over medium heat and coat with cooking spray.",
+                "Add spinach and saut\u00e9 for 1-2 minutes until wilted.",
+                "Pour in egg whites, season with salt and pepper, and scramble gently until cooked through, about 3-4 minutes.",
+                "Remove from heat and plate the scramble.",
+                "Serve alongside the Greek yogurt topped with sliced fresh strawberries."
+              ],
+              "protein_g": 47.0,
+              "carbs_g": 22.0,
+              "fat_g": 2.0,
+              "calories_kcal": 295.0,
+              "cost_usd": 1.29
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken and Black Bean Salad",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken breast",
+                  "quantity_description": "about 6.3 oz"
+                },
+                {
+                  "name": "canned black beans, drained and rinsed",
+                  "quantity_description": "3/4 cup"
+                },
+                {
+                  "name": "romaine lettuce",
+                  "quantity_description": "2 cups chopped"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "about 8 tomatoes"
+                },
+                {
+                  "name": "cucumber",
+                  "quantity_description": "1/2 small cucumber, sliced"
+                },
+                {
+                  "name": "lime juice",
+                  "quantity_description": "1 tablespoon"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 teaspoon"
+                },
+                {
+                  "name": "cumin",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Season chicken breast with cumin, garlic powder, and salt.",
+                "Heat a grill pan or skillet over medium-high heat with a light spray of oil.",
+                "Cook chicken for 6-7 minutes per side until internal temperature reaches 165\u00b0F. Let rest 5 minutes, then slice.",
+                "Drain and rinse black beans thoroughly.",
+                "Arrange romaine, cherry tomatoes, and cucumber in a large bowl.",
+                "Top with sliced chicken and black beans.",
+                "Whisk lime juice and olive oil together and drizzle over the salad. Toss lightly and serve."
+              ],
+              "protein_g": 56.0,
+              "carbs_g": 33.0,
+              "fat_g": 9.0,
+              "calories_kcal": 440.0,
+              "cost_usd": 1.72
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Cod with Roasted Broccoli and Brown Rice",
+              "ingredients": [
+                {
+                  "name": "cod fillet",
+                  "quantity_description": "about 7 oz"
+                },
+                {
+                  "name": "broccoli florets",
+                  "quantity_description": "about 2 cups"
+                },
+                {
+                  "name": "cooked brown rice",
+                  "quantity_description": "about 2/3 cup cooked"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1.5 tablespoons"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "2 teaspoons"
+                },
+                {
+                  "name": "garlic cloves, minced",
+                  "quantity_description": "2 small cloves"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "a pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400\u00b0F (205\u00b0C). Line a baking sheet with foil.",
+                "Place broccoli florets on one side of the baking sheet, drizzle with 1 teaspoon olive oil and a pinch of salt. Toss to coat.",
+                "Place cod fillet on the other side of the baking sheet.",
+                "Mix lemon juice, minced garlic, remaining 1 teaspoon olive oil, paprika, salt, and pepper. Spoon over the cod.",
+                "Roast everything in the oven for 18-20 minutes until the cod flakes easily with a fork and broccoli is lightly browned at the edges.",
+                "While fish and broccoli roast, prepare brown rice according to package instructions (or use pre-cooked).",
+                "Plate brown rice, top with the baked cod, and serve broccoli on the side."
+              ],
+              "protein_g": 46.0,
+              "carbs_g": 42.0,
+              "fat_g": 12.0,
+              "calories_kcal": 455.0,
+              "cost_usd": 1.6
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 15,
+    "system": "biosync",
+    "profile_id": 8,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 130.0,
+        "carbs_g": 130.0,
+        "fat_g": 40.0,
+        "calories_kcal": 1600.0
+      },
+      "daily_budget_usd": 14.0,
+      "zip_code": "85001",
+      "dietary_preferences": "No pork. Simple meals.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Yogurt with Oats and Banana",
+              "ingredients": [
+                {
+                  "name": "greek yogurt",
+                  "quantity_description": "200g (about 3/4 cup)"
+                },
+                {
+                  "name": "oats",
+                  "quantity_description": "60g (about 2/3 cup dry)"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1 medium banana"
+                }
+              ],
+              "cooking_instructions": [
+                "Combine oats with 120ml water in a microwave-safe bowl.",
+                "Microwave on high for 2 minutes, stir once halfway through.",
+                "Spoon greek yogurt into a bowl, top with cooked oats and sliced banana.",
+                "Serve immediately."
+              ],
+              "protein_g": 29.6,
+              "carbs_g": 75.0,
+              "fat_g": 5.3,
+              "calories_kcal": 452.2,
+              "cost_usd": 2.07
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Chicken and Brown Rice Bowl with Broccoli",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "150g (1 small breast)"
+                },
+                {
+                  "name": "brown rice",
+                  "quantity_description": "120g dry (about 2/3 cup)"
+                },
+                {
+                  "name": "broccoli",
+                  "quantity_description": "150g (about 1.5 cups florets)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "8g (about 1.5 tsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "2g (about 1/2 tsp)"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook brown rice according to package directions (about 40 minutes) or use a rice cooker.",
+                "Season chicken breast with garlic powder, salt, and pepper.",
+                "Heat olive oil in a skillet over medium-high heat.",
+                "Cook chicken 6-7 minutes per side until internal temperature reaches 165F.",
+                "Steam broccoli for 4-5 minutes until tender-crisp.",
+                "Slice chicken and serve over brown rice with broccoli on the side."
+              ],
+              "protein_g": 53.8,
+              "carbs_g": 38.1,
+              "fat_g": 15.1,
+              "calories_kcal": 503.6,
+              "cost_usd": 2.63
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Tilapia with Sweet Potato and Green Beans",
+              "ingredients": [
+                {
+                  "name": "tilapia fillet",
+                  "quantity_description": "180g (1 large fillet)"
+                },
+                {
+                  "name": "sweet potato",
+                  "quantity_description": "1 medium sweet potato"
+                },
+                {
+                  "name": "green beans",
+                  "quantity_description": "120g (about 1 cup)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "10g (2 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "2g (about 1/2 tsp)"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400F.",
+                "Peel and cube sweet potato into 1-inch pieces, toss with half the olive oil and a pinch of salt.",
+                "Spread sweet potato on a baking sheet and roast for 25 minutes, flipping halfway through.",
+                "Place tilapia fillet on a lined baking sheet, drizzle with remaining olive oil and lemon juice, sprinkle with paprika and salt.",
+                "Bake tilapia for 12-15 minutes until fish flakes easily with a fork.",
+                "While fish bakes, steam or blanch green beans for 4-5 minutes until tender.",
+                "Plate tilapia with roasted sweet potato and green beans."
+              ],
+              "protein_g": 50.4,
+              "carbs_g": 72.7,
+              "fat_g": 13.9,
+              "calories_kcal": 608.8,
+              "cost_usd": 3.2
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 16,
+    "system": "baseline",
+    "profile_id": 8,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 130.0,
+        "carbs_g": 130.0,
+        "fat_g": 40.0,
+        "calories_kcal": 1600.0
+      },
+      "daily_budget_usd": 14.0,
+      "zip_code": "85001",
+      "dietary_preferences": "No pork. Simple meals.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Yogurt with Banana and Oats",
+              "ingredients": [
+                {
+                  "name": "non-fat plain Greek yogurt",
+                  "quantity_description": "1 cup (200g)"
+                },
+                {
+                  "name": "rolled oats (dry)",
+                  "quantity_description": "1/2 cup"
+                },
+                {
+                  "name": "banana",
+                  "quantity_description": "1 medium banana"
+                }
+              ],
+              "cooking_instructions": [
+                "Measure oats into a bowl and microwave with 80ml water for 2 minutes, stirring once halfway through.",
+                "Top oatmeal with Greek yogurt and sliced banana.",
+                "Stir gently and serve immediately."
+              ],
+              "protein_g": 24.0,
+              "carbs_g": 52.0,
+              "fat_g": 3.0,
+              "calories_kcal": 335.0,
+              "cost_usd": 1.03
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Canned Tuna and White Bean Salad",
+              "ingredients": [
+                {
+                  "name": "canned tuna in water (drained)",
+                  "quantity_description": "2 cans (5oz each)"
+                },
+                {
+                  "name": "canned white beans (drained and rinsed)",
+                  "quantity_description": "3/4 cup"
+                },
+                {
+                  "name": "celery",
+                  "quantity_description": "2 stalks, chopped"
+                },
+                {
+                  "name": "red onion",
+                  "quantity_description": "2 tablespoons, diced"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1 tablespoon"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1/2 tablespoon"
+                },
+                {
+                  "name": "salt and black pepper",
+                  "quantity_description": "to taste"
+                }
+              ],
+              "cooking_instructions": [
+                "Drain and rinse white beans thoroughly.",
+                "In a bowl, combine drained tuna, white beans, chopped celery, and diced red onion.",
+                "Drizzle with lemon juice and olive oil, season with salt and pepper.",
+                "Toss well to combine and serve chilled or at room temperature."
+              ],
+              "protein_g": 58.0,
+              "carbs_g": 28.0,
+              "fat_g": 6.0,
+              "calories_kcal": 410.0,
+              "cost_usd": 1.69
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Chicken Breast with Steamed Broccoli and Brown Rice",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken breast",
+                  "quantity_description": "1 large breast (approx 7oz)"
+                },
+                {
+                  "name": "brown rice (dry)",
+                  "quantity_description": "1/3 cup dry"
+                },
+                {
+                  "name": "broccoli florets",
+                  "quantity_description": "about 2 cups florets"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1/2 tablespoon"
+                },
+                {
+                  "name": "salt and black pepper",
+                  "quantity_description": "to taste"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400\u00b0F (200\u00b0C).",
+                "Cook brown rice according to package instructions (approximately 35-40 minutes).",
+                "Pat chicken breast dry, rub with olive oil, garlic powder, paprika, salt, and pepper.",
+                "Place chicken on a baking sheet lined with foil and bake for 22-25 minutes until internal temperature reaches 165\u00b0F.",
+                "While chicken rests, steam broccoli florets for 4-5 minutes until tender-crisp.",
+                "Slice chicken and serve alongside rice and broccoli."
+              ],
+              "protein_g": 50.0,
+              "carbs_g": 50.0,
+              "fat_g": 11.0,
+              "calories_kcal": 495.0,
+              "cost_usd": 1.74
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 17,
+    "system": "biosync",
+    "profile_id": 9,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 160.0,
+        "carbs_g": 110.0,
+        "fat_g": 50.0,
+        "calories_kcal": 1550.0
+      },
+      "daily_budget_usd": 13.0,
+      "zip_code": "19101",
+      "dietary_preferences": "Dairy-free. Lean protein focus.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Turkey and Egg White Scramble with Oats",
+              "ingredients": [
+                {
+                  "name": "egg whites",
+                  "quantity_description": "240g (about 8 egg whites)"
+                },
+                {
+                  "name": "ground turkey",
+                  "quantity_description": "100g lean ground turkey"
+                },
+                {
+                  "name": "oats",
+                  "quantity_description": "40g (about 1/3 cup dry)"
+                },
+                {
+                  "name": "spinach",
+                  "quantity_description": "60g fresh spinach"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch of salt"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "a pinch of black pepper"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook oats with 120ml water in a small pot or microwave for 2-3 minutes; set aside.",
+                "Heat a non-stick pan over medium heat with no oil.",
+                "Add ground turkey and cook, breaking apart, for 4-5 minutes until browned.",
+                "Add spinach and stir until wilted, about 1-2 minutes.",
+                "Pour in egg whites, season with salt and pepper, and scramble until fully cooked.",
+                "Serve scramble alongside the cooked oats."
+              ],
+              "protein_g": 27.1,
+              "carbs_g": 29.2,
+              "fat_g": 13.0,
+              "calories_kcal": 342.7,
+              "cost_usd": 3.18
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Chicken and Lentil Power Bowl",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "220g (1 large breast)"
+                },
+                {
+                  "name": "green lentils",
+                  "quantity_description": "80g cooked (about 1/3 cup cooked)"
+                },
+                {
+                  "name": "cucumber",
+                  "quantity_description": "100g (about half a cucumber)"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "80g (about 8 tomatoes)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "8g (about 2 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "15g (about 1 tbsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "a pinch of garlic powder"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch of salt"
+                }
+              ],
+              "cooking_instructions": [
+                "Season chicken breast with garlic powder and salt.",
+                "Heat a grill pan or skillet over medium-high heat and brush with half the olive oil.",
+                "Cook chicken 6-7 minutes per side until internal temperature reaches 165F.",
+                "Let rest 3 minutes, then slice.",
+                "In a bowl, combine cooked lentils, cucumber, and cherry tomatoes.",
+                "Drizzle remaining olive oil and lemon juice over the bowl.",
+                "Top with sliced chicken and serve."
+              ],
+              "protein_g": 75.4,
+              "carbs_g": 16.1,
+              "fat_g": 16.2,
+              "calories_kcal": 526.5,
+              "cost_usd": 2.36
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Cod with Sweet Potato and Steamed Broccoli",
+              "ingredients": [
+                {
+                  "name": "cod fillet",
+                  "quantity_description": "250g fillet"
+                },
+                {
+                  "name": "sweet potato",
+                  "quantity_description": "80g (about half a small sweet potato)"
+                },
+                {
+                  "name": "broccoli",
+                  "quantity_description": "180g (about 1.5 cups florets)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "7g (about 1.5 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "15g (about 1 tbsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "a pinch of garlic powder"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "a pinch of paprika"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "a pinch of salt"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400F.",
+                "Cube sweet potato, toss with half the olive oil, and roast on a baking sheet for 20-25 minutes, flipping halfway.",
+                "Place cod on a lined baking sheet; drizzle with remaining olive oil and lemon juice.",
+                "Season cod with garlic powder, paprika, and salt.",
+                "Bake cod for 15-18 minutes until it flakes easily with a fork.",
+                "Steam broccoli for 4-5 minutes until tender-crisp.",
+                "Plate cod with roasted sweet potato and steamed broccoli."
+              ],
+              "protein_g": 6.3,
+              "carbs_g": 28.7,
+              "fat_g": 7.8,
+              "calories_kcal": 191.9,
+              "cost_usd": 1.49
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 18,
+    "system": "baseline",
+    "profile_id": 9,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 160.0,
+        "carbs_g": 110.0,
+        "fat_g": 50.0,
+        "calories_kcal": 1550.0
+      },
+      "daily_budget_usd": 13.0,
+      "zip_code": "19101",
+      "dietary_preferences": "Dairy-free. Lean protein focus.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Egg White and Spinach Scramble with Oats",
+              "ingredients": [
+                {
+                  "name": "liquid egg whites",
+                  "quantity_description": "1 cup"
+                },
+                {
+                  "name": "fresh spinach",
+                  "quantity_description": "2 large handfuls"
+                },
+                {
+                  "name": "rolled oats (dry)",
+                  "quantity_description": "1/2 cup"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 tsp"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/4 tsp"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "pinch"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Cook rolled oats with 1 cup water on stovetop over medium heat for 5 minutes, stirring occasionally. Set aside.",
+                "Heat olive oil in a non-stick skillet over medium heat.",
+                "Add spinach and saut\u00e9 for 1-2 minutes until wilted.",
+                "Pour in egg whites, season with garlic powder, salt, and pepper.",
+                "Scramble gently until egg whites are fully cooked through, about 3-4 minutes.",
+                "Serve egg white scramble alongside the oats."
+              ],
+              "protein_g": 34.0,
+              "carbs_g": 32.0,
+              "fat_g": 7.0,
+              "calories_kcal": 327.0,
+              "cost_usd": 1.16
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken Breast and Black Bean Rice Bowl",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken breast",
+                  "quantity_description": "1 large breast"
+                },
+                {
+                  "name": "canned black beans (drained and rinsed)",
+                  "quantity_description": "3/4 cup"
+                },
+                {
+                  "name": "cooked white rice",
+                  "quantity_description": "1/2 cup cooked"
+                },
+                {
+                  "name": "romaine lettuce",
+                  "quantity_description": "1 cup chopped"
+                },
+                {
+                  "name": "salsa (store-bought)",
+                  "quantity_description": "4 tbsp"
+                },
+                {
+                  "name": "lime juice",
+                  "quantity_description": "1 tbsp"
+                },
+                {
+                  "name": "cumin",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "chili powder",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 tsp"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Season chicken breast with cumin, chili powder, salt, and a drizzle of olive oil.",
+                "Cook chicken in a grill pan or skillet over medium-high heat for 6-7 minutes per side until internal temperature reaches 165\u00b0F.",
+                "Let chicken rest 5 minutes then slice.",
+                "Warm black beans in a small saucepan or microwave for 2 minutes.",
+                "Assemble bowl with rice on the bottom, then black beans, sliced chicken, and romaine lettuce.",
+                "Top with salsa and a squeeze of fresh lime juice."
+              ],
+              "protein_g": 63.0,
+              "carbs_g": 42.0,
+              "fat_g": 10.0,
+              "calories_kcal": 514.0,
+              "cost_usd": 1.97
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Tilapia with Roasted Broccoli and Sweet Potato",
+              "ingredients": [
+                {
+                  "name": "tilapia fillets",
+                  "quantity_description": "2 medium fillets"
+                },
+                {
+                  "name": "sweet potato",
+                  "quantity_description": "1 medium sweet potato"
+                },
+                {
+                  "name": "broccoli florets",
+                  "quantity_description": "1.5 cups"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "2 tsp"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1 tbsp"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 tsp"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "1/4 tsp"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "1/4 tsp"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "1/4 tsp"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400\u00b0F.",
+                "Peel and cube sweet potato into 1-inch pieces. Toss with 1 tsp olive oil, salt, and pepper. Spread on one half of a baking sheet.",
+                "Roast sweet potato for 10 minutes.",
+                "Toss broccoli florets with remaining olive oil, salt, and pepper. Add to the baking sheet with sweet potato and roast another 15-18 minutes.",
+                "Meanwhile, place tilapia fillets on a separate lined baking sheet. Drizzle with lemon juice and season with garlic powder, paprika, oregano, salt, and pepper.",
+                "Bake tilapia at 400\u00b0F for 12-14 minutes until fish flakes easily with a fork.",
+                "Plate tilapia alongside roasted sweet potato and broccoli and serve immediately."
+              ],
+              "protein_g": 48.0,
+              "carbs_g": 34.0,
+              "fat_g": 14.0,
+              "calories_kcal": 454.0,
+              "cost_usd": 1.63
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 19,
+    "system": "biosync",
+    "profile_id": 10,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 145.0,
+        "carbs_g": 140.0,
+        "fat_g": 45.0,
+        "calories_kcal": 1650.0
+      },
+      "daily_budget_usd": 11.0,
+      "zip_code": "33101",
+      "dietary_preferences": "Low carb, Mediterranean style.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Yogurt Bowl with Oats and Berries",
+              "ingredients": [
+                {
+                  "name": "plain greek yogurt",
+                  "quantity_description": "250g (about 1 cup)"
+                },
+                {
+                  "name": "rolled oats",
+                  "quantity_description": "50g (1/2 cup dry)"
+                },
+                {
+                  "name": "blueberries",
+                  "quantity_description": "80g (about 1/2 cup)"
+                },
+                {
+                  "name": "honey",
+                  "quantity_description": "10g (1 tsp)"
+                }
+              ],
+              "cooking_instructions": [
+                "Combine rolled oats with 100ml water in a microwave-safe bowl and microwave for 2 minutes.",
+                "Stir oats and let cool slightly.",
+                "Spoon greek yogurt into a bowl, top with cooked oats and blueberries.",
+                "Drizzle honey over the top and serve."
+              ],
+              "protein_g": 32.1,
+              "carbs_g": 42.5,
+              "fat_g": 4.5,
+              "calories_kcal": 337.0,
+              "cost_usd": 2.12
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Grilled Chicken Mediterranean Bowl",
+              "ingredients": [
+                {
+                  "name": "chicken breast",
+                  "quantity_description": "200g (1 large breast)"
+                },
+                {
+                  "name": "cucumber",
+                  "quantity_description": "100g (about 1/2 medium cucumber)"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "100g (about 8-10 tomatoes)"
+                },
+                {
+                  "name": "baby spinach",
+                  "quantity_description": "80g (about 2 large handfuls)"
+                },
+                {
+                  "name": "hummus",
+                  "quantity_description": "50g (about 3 tbsp)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "8g (about 1.5 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "15g (1 tbsp)"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "2g (1/2 tsp)"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "1g (1/4 tsp)"
+                }
+              ],
+              "cooking_instructions": [
+                "Season chicken breast with garlic powder, oregano, salt, and pepper.",
+                "Heat a grill pan over medium-high heat and brush with half the olive oil.",
+                "Grill chicken 6-7 minutes per side until internal temperature reaches 165F.",
+                "Let chicken rest 5 minutes, then slice.",
+                "Arrange spinach, cucumber, and cherry tomatoes in a bowl.",
+                "Top with sliced chicken and a dollop of hummus.",
+                "Drizzle remaining olive oil and lemon juice over the bowl and serve."
+              ],
+              "protein_g": 64.3,
+              "carbs_g": 2.9,
+              "fat_g": 15.5,
+              "calories_kcal": 419.1,
+              "cost_usd": 3.83
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Mediterranean Baked Cod with Sweet Potato and Zucchini",
+              "ingredients": [
+                {
+                  "name": "cod fillet",
+                  "quantity_description": "280g (about 2 medium fillets)"
+                },
+                {
+                  "name": "sweet potato",
+                  "quantity_description": "80g (about 1/2 small sweet potato)"
+                },
+                {
+                  "name": "zucchini",
+                  "quantity_description": "150g (1 medium zucchini)"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "8g (about 1.5 tsp)"
+                },
+                {
+                  "name": "garlic",
+                  "quantity_description": "10g (2 cloves)"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "80g (about 6-8 tomatoes)"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "2g (1/2 tsp)"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "2g (1/2 tsp)"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "20g (about 1.5 tbsp)"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 400F.",
+                "Dice sweet potato into small cubes, toss with half the olive oil, and spread on a baking sheet.",
+                "Roast sweet potato for 15 minutes.",
+                "Slice zucchini into half-moons and mince garlic.",
+                "Push sweet potato to the side of the pan and add zucchini, cherry tomatoes, and garlic.",
+                "Place cod fillets on the baking sheet, drizzle with remaining olive oil and lemon juice.",
+                "Season cod and vegetables with oregano, paprika, salt, and pepper.",
+                "Bake for 15-18 minutes until cod flakes easily with a fork.",
+                "Plate cod alongside roasted vegetables and serve immediately."
+              ],
+              "protein_g": 1.3,
+              "carbs_g": 16.1,
+              "fat_g": 8.1,
+              "calories_kcal": 139.5,
+              "cost_usd": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  },
+  {
+    "plan_id": 20,
+    "system": "baseline",
+    "profile_id": 10,
+    "constraints": {
+      "macro_targets": {
+        "protein_g": 145.0,
+        "carbs_g": 140.0,
+        "fat_g": 45.0,
+        "calories_kcal": 1650.0
+      },
+      "daily_budget_usd": 11.0,
+      "zip_code": "33101",
+      "dietary_preferences": "Low carb, Mediterranean style.",
+      "meals_per_day": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ]
+    },
+    "plan": {
+      "days": [
+        {
+          "day": 1,
+          "meals": [
+            {
+              "meal_type": "breakfast",
+              "recipe_name": "Greek Egg White Omelette with Spinach and Feta",
+              "ingredients": [
+                {
+                  "name": "egg whites",
+                  "quantity_description": "about 8 egg whites"
+                },
+                {
+                  "name": "fresh spinach",
+                  "quantity_description": "2 large handfuls"
+                },
+                {
+                  "name": "feta cheese",
+                  "quantity_description": "2 tablespoons crumbled"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "about 8 cherry tomatoes"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "1 teaspoon"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "1/4 teaspoon"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Heat a non-stick skillet over medium heat and add olive oil.",
+                "Add cherry tomatoes and cook for 2 minutes until slightly softened.",
+                "Add fresh spinach and saut\u00e9 for 1\u20132 minutes until wilted. Push to one side.",
+                "Pour egg whites evenly over the pan. Season with oregano and black pepper.",
+                "Cook undisturbed for 2\u20133 minutes until edges set, then gently fold omelette in half.",
+                "Sprinkle crumbled feta on top and serve immediately."
+              ],
+              "protein_g": 32.0,
+              "carbs_g": 8.0,
+              "fat_g": 9.0,
+              "calories_kcal": 238.0,
+              "cost_usd": 0.96
+            },
+            {
+              "meal_type": "lunch",
+              "recipe_name": "Mediterranean Tuna and Chickpea Salad",
+              "ingredients": [
+                {
+                  "name": "canned tuna in water",
+                  "quantity_description": "1 can (6 oz), drained"
+                },
+                {
+                  "name": "canned chickpeas",
+                  "quantity_description": "about 1/3 cup, drained and rinsed"
+                },
+                {
+                  "name": "cucumber",
+                  "quantity_description": "half a medium cucumber, diced"
+                },
+                {
+                  "name": "cherry tomatoes",
+                  "quantity_description": "about 8 cherry tomatoes, halved"
+                },
+                {
+                  "name": "red onion",
+                  "quantity_description": "2 tablespoons, finely diced"
+                },
+                {
+                  "name": "Kalamata olives",
+                  "quantity_description": "about 6 olives, halved"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "2 teaspoons"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1 tablespoon"
+                },
+                {
+                  "name": "dried oregano",
+                  "quantity_description": "1/4 teaspoon"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "pinch"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Drain and rinse chickpeas; drain tuna and flake with a fork.",
+                "Dice cucumber, halve cherry tomatoes, and finely dice red onion.",
+                "Halve Kalamata olives.",
+                "Combine tuna, chickpeas, cucumber, tomatoes, onion, and olives in a large bowl.",
+                "Whisk together olive oil, lemon juice, oregano, salt, and pepper.",
+                "Pour dressing over salad, toss gently to combine, and serve immediately or refrigerate until ready."
+              ],
+              "protein_g": 48.0,
+              "carbs_g": 28.0,
+              "fat_g": 13.0,
+              "calories_kcal": 425.0,
+              "cost_usd": 1.57
+            },
+            {
+              "meal_type": "dinner",
+              "recipe_name": "Baked Lemon Herb Chicken Thighs with Roasted Zucchini and Cauliflower",
+              "ingredients": [
+                {
+                  "name": "boneless skinless chicken thighs",
+                  "quantity_description": "about 3 medium thighs"
+                },
+                {
+                  "name": "zucchini",
+                  "quantity_description": "2 small zucchinis, sliced into half-moons"
+                },
+                {
+                  "name": "cauliflower florets",
+                  "quantity_description": "about 2 cups"
+                },
+                {
+                  "name": "olive oil",
+                  "quantity_description": "2 teaspoons"
+                },
+                {
+                  "name": "lemon juice",
+                  "quantity_description": "1.5 tablespoons"
+                },
+                {
+                  "name": "lemon zest",
+                  "quantity_description": "zest of half a lemon"
+                },
+                {
+                  "name": "garlic powder",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "dried thyme",
+                  "quantity_description": "1/4 teaspoon"
+                },
+                {
+                  "name": "dried rosemary",
+                  "quantity_description": "1/4 teaspoon"
+                },
+                {
+                  "name": "paprika",
+                  "quantity_description": "1/2 teaspoon"
+                },
+                {
+                  "name": "salt",
+                  "quantity_description": "1/3 teaspoon"
+                },
+                {
+                  "name": "black pepper",
+                  "quantity_description": "pinch"
+                }
+              ],
+              "cooking_instructions": [
+                "Preheat oven to 425\u00b0F (220\u00b0C). Line a large baking sheet with foil.",
+                "In a small bowl, mix olive oil, lemon juice, lemon zest, garlic powder, thyme, rosemary, paprika, salt, and pepper.",
+                "Pat chicken thighs dry and coat thoroughly with half the herb mixture.",
+                "Toss zucchini and cauliflower florets with remaining herb mixture and spread on one half of the baking sheet.",
+                "Place chicken thighs on the other half of the baking sheet.",
+                "Bake for 25\u201330 minutes, flipping vegetables halfway through, until chicken reaches 165\u00b0F internal temperature and vegetables are golden.",
+                "Rest chicken for 5 minutes before serving alongside roasted vegetables."
+              ],
+              "protein_g": 65.0,
+              "carbs_g": 18.0,
+              "fat_g": 23.0,
+              "calories_kcal": 535.0,
+              "cost_usd": 2.04
+            }
+          ]
+        }
+      ]
+    },
+    "passed_validation": false
+  }
+]
