@@ -22,10 +22,8 @@ import argparse
 from datetime import datetime
 from dataclasses import asdict
 
-os.environ.setdefault("USE_MOCK_APIS", "true")
-
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv()  # respects USE_MOCK_APIS from .env
 
 from src.schemas import UserConstraints
 from src.pipeline import run_pipeline
@@ -207,8 +205,8 @@ if __name__ == "__main__":
             "multimodel=10 profiles/biosync across haiku+sonnet"
         ),
     )
-    parser.add_argument("--mock", action="store_true", default=True,
-                        help="Use mock APIs (default True)")
+    parser.add_argument("--mock", action="store_true", default=False,
+                        help="Force mock APIs (overrides .env)")
     parser.add_argument("--n", type=int, default=None,
                         help="Override number of profiles (for quick tests)")
     args = parser.parse_args()

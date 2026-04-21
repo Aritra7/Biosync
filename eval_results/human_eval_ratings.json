@@ -1,462 +1,455 @@
 {
   "1": {
-    "rater_1": {
-      "coherence": 5,
-      "variety": 4,
+    "1": {
+      "coherence": 4,
+      "variety": 3,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328757"
+      "timestamp": "2026-04-21T01:47:36.066761"
     },
-    "rater_2": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
+    "2": {
+      "coherence": 4,
+      "variety": 2,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328765"
-    },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328768"
+      "timestamp": "2026-04-21T01:49:52.462917"
     }
   },
   "2": {
-    "rater_1": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328790"
-    },
-    "rater_2": {
-      "coherence": 4,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328792"
-    },
-    "rater_3": {
+    "1": {
       "coherence": 4,
       "variety": 3,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-21T01:47:45.479596"
+    },
+    "2": {
+      "coherence": 5,
+      "variety": 5,
       "practicality": 5,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328793"
+      "timestamp": "2026-04-21T01:49:56.249093"
+    },
+    "3": {
+      "coherence": 4,
+      "variety": 5,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-21T01:51:26.015721"
     }
   },
   "3": {
-    "rater_1": {
-      "coherence": 5,
-      "variety": 3,
+    "1": {
+      "coherence": 4,
+      "variety": 2,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-21T01:47:58.457759"
+    },
+    "2": {
+      "coherence": 1,
+      "variety": 2,
+      "practicality": 2,
+      "notes": "",
+      "timestamp": "2026-04-21T01:49:59.499884"
+    },
+    "3": {
+      "coherence": 4,
+      "variety": 5,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328810"
-    },
-    "rater_2": {
-      "coherence": 4,
-      "variety": 4,
-      "practicality": 5,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328811"
-    },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 3,
-      "practicality": 5,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328812"
+      "timestamp": "2026-04-21T01:51:32.502095"
     }
   },
   "4": {
-    "rater_1": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 3,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328832"
-    },
-    "rater_2": {
+    "1": {
       "coherence": 4,
-      "variety": 4,
-      "practicality": 3,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328834"
-    },
-    "rater_3": {
-      "coherence": 4,
-      "variety": 3,
+      "variety": 1,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328835"
+      "timestamp": "2026-04-21T01:48:08.714817"
+    },
+    "2": {
+      "coherence": 4,
+      "variety": 5,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-21T01:50:03.532170"
+    },
+    "3": {
+      "coherence": 5,
+      "variety": 5,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-21T01:51:35.743941"
     }
   },
   "5": {
-    "rater_1": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328853"
-    },
-    "rater_2": {
+    "1": {
       "coherence": 4,
-      "variety": 4,
+      "variety": 2,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328854"
+      "timestamp": "2026-04-21T01:48:15.307119"
     },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
+    "2": {
+      "coherence": 4,
+      "variety": 2,
+      "practicality": 5,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328857"
+      "timestamp": "2026-04-21T01:50:13.955220"
+    },
+    "3": {
+      "coherence": 4,
+      "variety": 2,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-21T01:51:38.906081"
     }
   },
   "6": {
-    "rater_1": {
+    "1": {
       "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
+      "variety": 1,
+      "practicality": 5,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328875"
+      "timestamp": "2026-04-21T01:48:21.542751"
     },
-    "rater_2": {
+    "2": {
       "coherence": 4,
       "variety": 4,
-      "practicality": 4,
+      "practicality": 5,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328876"
+      "timestamp": "2026-04-21T01:50:17.098565"
     },
-    "rater_3": {
+    "3": {
       "coherence": 4,
-      "variety": 3,
-      "practicality": 4,
+      "variety": 4,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328877"
+      "timestamp": "2026-04-21T01:51:46.545860"
     }
   },
   "7": {
-    "rater_1": {
+    "1": {
       "coherence": 5,
-      "variety": 3,
-      "practicality": 4,
+      "variety": 5,
+      "practicality": 5,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328893"
+      "timestamp": "2026-04-21T01:48:25.347414"
     },
-    "rater_2": {
-      "coherence": 5,
+    "2": {
+      "coherence": 4,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328894"
+      "timestamp": "2026-04-21T01:50:21.695381"
     },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 3,
+    "3": {
+      "coherence": 4,
+      "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328895"
+      "timestamp": "2026-04-21T01:51:49.909683"
     }
   },
   "8": {
-    "rater_1": {
-      "coherence": 4,
-      "variety": 4,
-      "practicality": 3,
+    "1": {
+      "coherence": 5,
+      "variety": 5,
+      "practicality": 5,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328914"
+      "timestamp": "2026-04-21T01:48:29.379559"
     },
-    "rater_2": {
+    "2": {
       "coherence": 4,
-      "variety": 4,
-      "practicality": 4,
+      "variety": 2,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328915"
+      "timestamp": "2026-04-21T01:50:26.684176"
     },
-    "rater_3": {
-      "coherence": 4,
+    "3": {
+      "coherence": 5,
       "variety": 4,
-      "practicality": 4,
+      "practicality": 5,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328916"
+      "timestamp": "2026-04-21T01:51:53.623554"
     }
   },
   "9": {
-    "rater_1": {
-      "coherence": 5,
+    "1": {
+      "coherence": 2,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328930"
+      "timestamp": "2026-04-21T01:48:33.195653"
     },
-    "rater_2": {
+    "2": {
+      "coherence": 3,
+      "variety": 3,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-21T01:50:28.108429"
+    },
+    "3": {
       "coherence": 4,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328932"
-    },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328933"
+      "timestamp": "2026-04-21T01:52:02.736277"
     }
   },
   "10": {
-    "rater_1": {
-      "coherence": 5,
-      "variety": 3,
+    "1": {
+      "coherence": 2,
+      "variety": 2,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328949"
+      "timestamp": "2026-04-21T01:48:37.602074"
     },
-    "rater_2": {
+    "2": {
+      "coherence": 4,
+      "variety": 5,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-21T01:50:33.348992"
+    },
+    "3": {
       "coherence": 4,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328950"
-    },
-    "rater_3": {
-      "coherence": 4,
-      "variety": 3,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328951"
+      "timestamp": "2026-04-21T01:52:05.885012"
     }
   },
   "11": {
-    "rater_1": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328964"
-    },
-    "rater_2": {
+    "1": {
       "coherence": 4,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328965"
-    },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 3,
+      "variety": 5,
       "practicality": 5,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328966"
+      "timestamp": "2026-04-21T01:48:41.358800"
+    },
+    "2": {
+      "coherence": 5,
+      "variety": 4,
+      "practicality": 3,
+      "notes": "",
+      "timestamp": "2026-04-21T01:50:38.601104"
+    },
+    "3": {
+      "coherence": 5,
+      "variety": 5,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-21T01:52:09.034580"
     }
   },
   "12": {
-    "rater_1": {
+    "1": {
       "coherence": 5,
-      "variety": 4,
-      "practicality": 3,
+      "variety": 5,
+      "practicality": 5,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328982"
+      "timestamp": "2026-04-21T01:48:46.984458"
     },
-    "rater_2": {
+    "2": {
+      "coherence": 4,
+      "variety": 2,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-21T01:50:42.585759"
+    },
+    "3": {
       "coherence": 4,
       "variety": 4,
-      "practicality": 4,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328983"
-    },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328984"
+      "timestamp": "2026-04-21T01:52:12.349416"
     }
   },
   "13": {
-    "rater_1": {
+    "1": {
       "coherence": 4,
-      "variety": 4,
-      "practicality": 4,
+      "variety": 1,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328997"
+      "timestamp": "2026-04-21T01:48:53.238745"
     },
-    "rater_2": {
-      "coherence": 4,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.328998"
-    },
-    "rater_3": {
+    "2": {
       "coherence": 5,
-      "variety": 3,
+      "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329000"
+      "timestamp": "2026-04-21T01:50:47.065044"
+    },
+    "3": {
+      "coherence": 4,
+      "variety": 5,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-21T01:52:15.626610"
     }
   },
   "14": {
-    "rater_1": {
+    "1": {
       "coherence": 5,
-      "variety": 3,
+      "variety": 4,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-21T01:49:03.512550"
+    },
+    "2": {
+      "coherence": 5,
+      "variety": 4,
       "practicality": 3,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329016"
+      "timestamp": "2026-04-21T01:50:50.503644"
     },
-    "rater_2": {
+    "3": {
       "coherence": 4,
-      "variety": 4,
+      "variety": 5,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329017"
-    },
-    "rater_3": {
-      "coherence": 4,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329018"
+      "timestamp": "2026-04-21T01:52:19.840592"
     }
   },
   "15": {
-    "rater_1": {
-      "coherence": 5,
-      "variety": 3,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329031"
-    },
-    "rater_2": {
+    "1": {
       "coherence": 4,
+      "variety": 1,
+      "practicality": 2,
+      "notes": "",
+      "timestamp": "2026-04-21T01:49:07.230261"
+    },
+    "2": {
+      "coherence": 4,
+      "variety": 1,
+      "practicality": 2,
+      "notes": "",
+      "timestamp": "2026-04-21T01:50:53.838509"
+    },
+    "3": {
+      "coherence": 5,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329032"
-    },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 3,
-      "practicality": 5,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329033"
+      "timestamp": "2026-04-21T01:52:23.216941"
     }
   },
   "16": {
-    "rater_1": {
+    "1": {
       "coherence": 5,
       "variety": 4,
-      "practicality": 4,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329045"
+      "timestamp": "2026-04-21T01:49:10.446237"
     },
-    "rater_2": {
+    "2": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 2,
+      "notes": "",
+      "timestamp": "2026-04-21T01:50:57.058386"
+    },
+    "3": {
       "coherence": 4,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329046"
-    },
-    "rater_3": {
-      "coherence": 4,
-      "variety": 3,
-      "practicality": 5,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329047"
+      "timestamp": "2026-04-21T01:52:29.688406"
     }
   },
   "17": {
-    "rater_1": {
+    "1": {
       "coherence": 5,
-      "variety": 4,
-      "practicality": 3,
+      "variety": 5,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329061"
+      "timestamp": "2026-04-21T01:49:13.953866"
     },
-    "rater_2": {
+    "2": {
       "coherence": 4,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329062"
+      "timestamp": "2026-04-21T01:51:00.397162"
     },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 3,
-      "practicality": 4,
+    "3": {
+      "coherence": 4,
+      "variety": 4,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329063"
+      "timestamp": "2026-04-21T01:52:33.625603"
     }
   },
   "18": {
-    "rater_1": {
+    "1": {
       "coherence": 5,
-      "variety": 4,
-      "practicality": 4,
+      "variety": 5,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329080"
+      "timestamp": "2026-04-21T01:49:17.389033"
     },
-    "rater_2": {
+    "2": {
+      "coherence": 4,
+      "variety": 2,
+      "practicality": 2,
+      "notes": "",
+      "timestamp": "2026-04-21T01:51:03.901105"
+    },
+    "3": {
       "coherence": 4,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329081"
-    },
-    "rater_3": {
-      "coherence": 4,
-      "variety": 4,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329082"
+      "timestamp": "2026-04-21T01:52:37.610515"
     }
   },
   "19": {
-    "rater_1": {
+    "1": {
       "coherence": 5,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329100"
+      "timestamp": "2026-04-21T01:49:20.935932"
     },
-    "rater_2": {
+    "2": {
+      "coherence": 4,
+      "variety": 5,
+      "practicality": 5,
+      "notes": "",
+      "timestamp": "2026-04-21T01:51:09.870224"
+    },
+    "3": {
       "coherence": 4,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329101"
-    },
-    "rater_3": {
-      "coherence": 5,
-      "variety": 4,
-      "practicality": 5,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329103"
+      "timestamp": "2026-04-21T01:52:40.714992"
     }
   },
   "20": {
-    "rater_1": {
+    "1": {
       "coherence": 4,
-      "variety": 3,
-      "practicality": 3,
+      "variety": 2,
+      "practicality": 2,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329316"
+      "timestamp": "2026-04-21T01:49:25.362512"
     },
-    "rater_2": {
+    "2": {
+      "coherence": 4,
+      "variety": 2,
+      "practicality": 4,
+      "notes": "",
+      "timestamp": "2026-04-21T01:51:14.822897"
+    },
+    "3": {
       "coherence": 4,
       "variety": 4,
       "practicality": 4,
       "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329318"
-    },
-    "rater_3": {
-      "coherence": 4,
-      "variety": 3,
-      "practicality": 4,
-      "notes": "",
-      "timestamp": "2026-04-20T05:03:52.329319"
+      "timestamp": "2026-04-21T01:52:45.072333"
     }
   }
 }
