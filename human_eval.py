@@ -6,6 +6,10 @@ Raters score generated meal plans on three dimensions (1–5 scale):
   - Variety: Enough diversity across meals/days?
   - Practicality: Can a normal person actually make these?
 
+Target: 12 raters × 20 plans = 240 total ratings.
+Rater personas span nutritionists, athletes, students, parents, home cooks,
+culinary students, food scientists, and busy professionals.
+
 Usage:
     # First generate plans to rate:
     python -m src.evaluation.generate_eval_plans

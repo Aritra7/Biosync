@@ -1,27 +1,49 @@
 """
-Researcher Agent — Kroger API grounding for real-time pricing.
+Researcher Agent — grocery pricing grounding via Kroger or Instacart.
 
 Responsibilities:
 - Takes an ingredient list + ZIP code from the Planner
-- Uses the LLM to map ingredient names to the best Kroger product search terms
-  (e.g. "chicken breast" → "boneless skinless chicken breast" for better SKU match)
-- Queries the Kroger Product API for current per-unit prices and availability
+- Uses the LLM to map ingredient names to the best product search terms
+  (e.g. "chicken breast" → "boneless skinless chicken breast")
+- Queries the configured pricing source (Kroger by default, or Instacart)
+  for current per-unit prices and availability
 - Returns a PriceLookupResult for the Critic to use
+
+Pricing source: controlled by PRICING_SOURCE env var.
+  PRICING_SOURCE=kroger    (default) — Kroger Product API
+  PRICING_SOURCE=instacart           — Instacart Connect API
 """
 
+import os
 import json
 import re
 from src.agents.base import llm_call
-from src.tools.kroger import lookup_price
 from src.schemas import PriceLookupResult, PriceRecord
+
+# ---------------------------------------------------------------------------
+# Dynamic pricing source selection
+# ---------------------------------------------------------------------------
+
+def _get_lookup_fn():
+    """
+    Return the lookup_price function for the configured pricing source.
+    Defaults to Kroger unless PRICING_SOURCE=instacart is set.
+    """
+    source = os.environ.get("PRICING_SOURCE", "kroger").lower().strip()
+    if source == "instacart":
+        from src.tools.instacart import lookup_price
+    else:
+        from src.tools.kroger import lookup_price
+    return lookup_price, source
+
 
 SYSTEM_PROMPT = """You are the Researcher agent in Bio-Sync, a multi-agent meal planning system.
 
-Your job is to map ingredient names from a meal plan to the best Kroger product search terms.
+Your job is to map ingredient names from a meal plan to the best grocery product search terms.
 
 Rules:
-1. Output ONLY valid JSON — a flat object mapping each input ingredient name to its best Kroger search term.
-2. Use terms that match real Kroger product names:
+1. Output ONLY valid JSON — a flat object mapping each input ingredient name to its best search term.
+2. Use clear, common grocery product names:
    - "chicken breast" → "boneless skinless chicken breast"
    - "greek yogurt" → "plain greek yogurt nonfat"
    - "brown rice" → "long grain brown rice"
@@ -29,23 +51,23 @@ Rules:
    - "olive oil" → "extra virgin olive oil"
 3. Keep search terms concise (3-5 words). Avoid overly specific brand names unless it helps.
 4. For produce, keep it simple: "broccoli crowns", "baby spinach", "sweet potato"
-5. Output format: {"original_name": "kroger_search_term", ...}
+5. Output format: {"original_name": "search_term", ...}
 """
 
 
-def _resolve_kroger_terms(ingredient_names: list[str]) -> dict[str, str]:
+def _resolve_search_terms(ingredient_names: list[str]) -> dict[str, str]:
     """
-    Use the LLM to map ingredient names to optimal Kroger product search terms.
-    Returns a dict of {original_name: kroger_search_term}.
+    Use the LLM to map ingredient names to optimal grocery product search terms.
+    Returns a dict of {original_name: search_term}.
     """
     names_json = json.dumps(ingredient_names, indent=2)
-    user_prompt = f"""Map these ingredient names to the best Kroger product search terms.
+    user_prompt = f"""Map these ingredient names to the best grocery product search terms.
 
 Ingredients:
 {names_json}
 
 Output ONLY a JSON object like:
-{{"ingredient name": "kroger search term", ...}}"""
+{{"ingredient name": "search term", ...}}"""
 
     raw = llm_call(SYSTEM_PROMPT, user_prompt, max_tokens=1024)
 
@@ -69,13 +91,19 @@ def run_researcher(
     log_callback=None,
 ) -> PriceLookupResult:
     """
-    Look up Kroger prices for a list of ingredient names at the given ZIP code.
+    Look up grocery prices for a list of ingredient names at the given ZIP code.
+
+    Pricing source is determined by the PRICING_SOURCE environment variable:
+      PRICING_SOURCE=kroger    (default) — Kroger Product API
+      PRICING_SOURCE=instacart           — Instacart Connect API
 
     Args:
         ingredient_names: Unique ingredient names from the meal plan.
         zip_code: User's ZIP code for local store pricing.
         log_callback: Optional callable(str) for streaming log messages.
     """
+    lookup_price, source_label = _get_lookup_fn()
+
     # Deduplicate
     seen = set()
     unique_names = []
@@ -88,21 +116,23 @@ def run_researcher(
     if log_callback:
         log_callback(
             f"Researcher Agent: Pricing {len(unique_names)} ingredients "
-            f"near ZIP {zip_code} via Kroger API..."
+            f"near ZIP {zip_code} via {source_label.capitalize()} API..."
         )
 
-    # Step 1: LLM resolves ingredient names to Kroger-optimized search terms
-    term_mapping = _resolve_kroger_terms(unique_names)
+    # Step 1: LLM resolves ingredient names to optimized search terms
+    term_mapping = _resolve_search_terms(unique_names)
 
     if log_callback:
         for orig, term in term_mapping.items():
             if orig.lower() != term.lower():
-                log_callback(f"Researcher Agent: Mapped '{orig}' → '{term}' for Kroger search")
+                log_callback(
+                    f"Researcher Agent: Mapped '{orig}' → '{term}' for {source_label} search"
+                )
 
-    # Step 2: Query Kroger API (or mock) for each resolved term
+    # Step 2: Query the pricing API (or mock) for each resolved term
     result = PriceLookupResult()
-    for original_name, kroger_term in term_mapping.items():
-        record = lookup_price(kroger_term, zip_code)
+    for original_name, search_term in term_mapping.items():
+        record = lookup_price(search_term, zip_code)
         if record:
             # Re-tag with the original ingredient name
             record = PriceRecord(
@@ -125,7 +155,9 @@ def run_researcher(
         else:
             result.failed_lookups.append(original_name)
             if log_callback:
-                log_callback(f"Researcher Agent: Could not find Kroger price for '{original_name}'")
+                log_callback(
+                    f"Researcher Agent: Could not find {source_label} price for '{original_name}'"
+                )
 
     if log_callback:
         log_callback(

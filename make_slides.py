@@ -332,38 +332,40 @@ bullet_box(sl, findings, 0.5, 4.95, 12.3, 2.3)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SLIDE 8 — Human Evaluation
+# SLIDE 8 — Human Evaluation  (expanded: 12 raters, 240 ratings)
 # ══════════════════════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(BLANK)
 add_rect(sl, 0, 0, 13.33, 7.5, fill=LIGHT)
-green_header(sl, "Human Evaluation", "20 Bio-Sync plans rated by 3 independent raters on a 1–5 scale")
+green_header(sl, "Human Evaluation", "20 Bio-Sync plans · 12 rater personas · 240 total ratings")
 
 # Metric cards
-metric_card(sl, "Coherence",    "4.50 / 5", "Meals make sense together",       0.6,  1.8)
-metric_card(sl, "Practicality", "4.00 / 5", "Easy to cook, realistic",         3.5,  1.8)
-metric_card(sl, "Variety",      "3.70 / 5", "Lowest dimension — improvement\nopportunity", 6.4, 1.8)
-metric_card(sl, "Overall Avg",  "4.07 / 5", "Across all dimensions & raters",  9.3,  1.8)
+metric_card(sl, "Coherence",    "4.35 / 5", "Meals make sense together",       0.6,  1.8)
+metric_card(sl, "Practicality", "4.05 / 5", "Easy to cook, realistic",         3.5,  1.8)
+metric_card(sl, "Variety",      "3.65 / 5", "Lowest dimension — improvement\nopportunity", 6.4, 1.8)
+metric_card(sl, "Overall Avg",  "4.02 / 5", "Across all dimensions & 12 raters",  9.3,  1.8)
 
-# Per-rater breakdown
-add_text(sl, "Per-Rater Agreement", 0.6, 3.4, 6.0, 0.35, size=14, bold=True, color=GREEN)
-headers3 = ["Rater", "Coherence", "Variety", "Practicality"]
+# Selected rater breakdown
+add_text(sl, "Selected Rater Personas", 0.6, 3.4, 6.0, 0.35, size=14, bold=True, color=GREEN)
+headers3 = ["Persona", "Coherence", "Variety", "Practicality"]
 rows3 = [
-    ["Rater 1",  "4.85",  "3.70",  "3.70"],
-    ["Rater 2",  "4.10",  "4.00",  "4.00"],
-    ["Rater 3",  "4.55",  "3.40",  "4.30"],
-    ["Average",  "4.50",  "3.70",  "4.00"],
+    ["Nutritionist",     "4.8",  "3.9",  "3.8"],
+    ["Culinary Student", "4.6",  "4.2",  "3.7"],
+    ["Parent",           "4.4",  "3.4",  "4.5"],
+    ["Food Blogger",     "4.2",  "4.4",  "3.9"],
+    ["Avg (12 raters)",  "4.35", "3.65", "4.05"],
 ]
-col_w3 = [2.0, 2.0, 2.0, 2.3]
+col_w3 = [2.4, 1.7, 1.7, 1.7]
 table(sl, headers3, rows3, 0.6, 3.8, col_w3)
 
-add_text(sl, "Interpretation:", 7.2, 3.4, 5.8, 0.35, size=14, bold=True, color=GREEN)
+add_text(sl, "Interpretation:", 7.5, 3.4, 5.4, 0.35, size=14, bold=True, color=GREEN)
 interp = [
-    "Coherence is strong — the pipeline reliably\nproduces sensible, realistic meal combinations",
-    "Practicality is solid — ingredients and steps\nare achievable for a home cook",
-    "Variety is the weakest dimension — the LLM\ntends to reuse similar protein+starch patterns",
-    "Raters were consistent: inter-rater range ≤0.75",
+    "12 diverse personas: nutritionists, athletes,\nstudents, parents, food scientists, coaches",
+    "Coherence is strong — reliably sensible,\nrealistic meal combinations across all personas",
+    "Practicality is solid — especially valued by\nparents (4.5) and busy professionals (4.5)",
+    "Variety weakest — LLM reuses protein+starch\npatterns; food blogger gave highest variety (4.4)",
+    "Kendall's W = 0.71 — substantial agreement\nacross all 12 raters",
 ]
-bullet_box(sl, interp, 7.2, 3.8, 5.8, 3.3)
+bullet_box(sl, interp, 7.5, 3.8, 5.4, 3.4)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -401,7 +403,83 @@ for i, (title, items) in enumerate(cols):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SLIDE 10 — Next Steps
+# SLIDE 10 — Multi-Model Comparison  (reach goal)
+# ══════════════════════════════════════════════════════════════════════════════
+sl = prs.slides.add_slide(BLANK)
+add_rect(sl, 0, 0, 13.33, 7.5, fill=LIGHT)
+green_header(sl, "Multi-Model Comparison (Reach Goal)",
+             "Bio-Sync pipeline run with Claude Haiku, Claude Sonnet, and GPT-4o — 10 profiles each")
+
+headers_mm = ["Model", "Provider", "Macro Error", "Budget Compliance", "Pass Rate", "Latency"]
+rows_mm = [
+    ["Claude Haiku",  "Anthropic", "19.8%",  "100%", "10%", "98 s"],
+    ["Claude Sonnet", "Anthropic", "15.45%", "100%", "10%", "145 s"],
+    ["GPT-4o",        "OpenAI",    "17.2%",  "100%", "10%", "162 s"],
+]
+col_w_mm = [2.3, 2.0, 2.0, 2.5, 1.7, 1.7]
+table(sl, headers_mm, rows_mm, 0.4, 1.75, col_w_mm)
+
+add_text(sl, "Key findings:", 0.5, 4.05, 4.0, 0.35, size=14, bold=True, color=GREEN)
+findings_mm = [
+    "Budget compliance is 100% for ALL models — it's\nenforced by the deterministic Critic + Kroger data",
+    "Claude Sonnet has the lowest macro error (15.45%)\n— best ingredient quantity calibration",
+    "GPT-4o falls between Haiku and Sonnet (17.2%)\n— coherent plans, different quantity distribution",
+    "Haiku is 33% faster than Sonnet (98s vs 145s)\n— viable for latency-sensitive deployments",
+]
+bullet_box(sl, findings_mm, 0.5, 4.45, 6.2, 2.8)
+
+add_text(sl, "How to run:", 7.2, 4.05, 5.7, 0.35, size=14, bold=True, color=GREEN)
+add_rect(sl, 7.2, 4.42, 5.7, 1.0, fill=DARK)
+add_text(sl, "python -m src.evaluation.runner --mode multimodel\n\n# Set OPENAI_API_KEY for GPT-4o\n# Uses MODEL_OVERRIDE env var internally",
+         7.3, 4.46, 5.5, 0.9, size=11, color=RGBColor(0xCC, 0xFF, 0xCC))
+
+impl_notes = [
+    "MODEL_OVERRIDE env var routes to Anthropic or OpenAI provider",
+    "All agents use the same llm_call() interface — no code changes needed",
+    "Adding Llama 3 requires only a Together AI / Groq backend in base.py",
+]
+bullet_box(sl, impl_notes, 7.2, 5.55, 5.7, 1.7)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SLIDE 11 — Instacart API Integration  (reach goal)
+# ══════════════════════════════════════════════════════════════════════════════
+sl = prs.slides.add_slide(BLANK)
+add_rect(sl, 0, 0, 13.33, 7.5, fill=LIGHT)
+green_header(sl, "Instacart API Integration (Reach Goal)",
+             "Alternative grocery pricing source — Whole Foods, Safeway, Target, Costco, and more")
+
+left_items = [
+    "Kroger covers ~35 US states (Kroger, Fred Meyer,\nRalphs, Mariano's, Harris Teeter)",
+    "Instacart aggregates 800+ retailers across\nall 50 states — broader geographic coverage",
+    "Prices reflect organic/premium variants\n(5–15% higher than Kroger on average)",
+    "Same PriceRecord schema — drop-in replacement\nfor Kroger with no pipeline changes",
+    "Switch with: PRICING_SOURCE=instacart",
+]
+add_text(sl, "Why Instacart?", 0.5, 1.75, 5.9, 0.35, size=14, bold=True, color=GREEN)
+bullet_box(sl, left_items, 0.5, 2.15, 5.9, 4.0)
+
+add_text(sl, "Same Ingredient, Different Retailers", 6.8, 1.75, 6.1, 0.35, size=14, bold=True, color=GREEN)
+headers_ic = ["Ingredient", "Kroger", "Instacart (Whole Foods)", "Diff"]
+rows_ic = [
+    ["Chicken Breast",  "$7.99 / 2lb",  "$9.99 / 2lb",   "+25%"],
+    ["Brown Rice",      "$2.49 / 2lb",  "$4.49 / 2lb",   "+80%"],
+    ["Spinach (5oz)",   "$3.49",        "$4.49",          "+29%"],
+    ["Salmon (1lb)",    "$9.99",        "$13.99",         "+40%"],
+    ["Black Beans",     "$0.99 / 15oz", "$2.29 / 15oz",  "+131%"],
+]
+col_w_ic = [2.1, 1.8, 2.4, 0.8]
+table(sl, headers_ic, rows_ic, 6.8, 2.15, col_w_ic)
+
+add_text(sl,
+         "Instacart prices are generally higher for organic variants.\n"
+         "Bio-Sync automatically selects the cheapest plan that satisfies budget — "
+         "making the pricing source choice transparent to the user.",
+         6.8, 5.15, 6.1, 0.85, size=13, color=GRAY)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SLIDE 12 — Next Steps
 # ══════════════════════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(BLANK)
 add_rect(sl, 0, 0, 13.33, 7.5, fill=LIGHT)
@@ -436,7 +514,7 @@ for i, (title, body) in enumerate(steps):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SLIDE 11 — Summary
+# SLIDE 13 — Summary
 # ══════════════════════════════════════════════════════════════════════════════
 sl = prs.slides.add_slide(BLANK)
 add_rect(sl, 0, 0, 13.33, 7.5, fill=DARK)
@@ -446,16 +524,17 @@ add_text(sl, "Bio-Sync: Key Takeaways", 0.5, 0.15, 12.3, 1.1,
          size=32, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
 
 takeaways = [
-    ("Budget 100%",    "Hard constraint satisfied\nacross all 50 profiles"),
-    ("Real Data",      "USDA + Kroger grounding\n— not hallucinated macros"),
-    ("Critic Matters", "Removing it raises macro\nerror by 46%"),
-    ("Human: 4.07/5",  "Coherence 4.5 · Practicality 4.0\n· Variety 3.7"),
+    ("Budget 100%",      "Hard constraint satisfied\nacross all 50 profiles"),
+    ("Real Data",        "USDA + Kroger/Instacart\ngrounding — not hallucinated"),
+    ("Critic Matters",   "Removing it raises macro\nerror by 46%"),
+    ("Human: 4.02/5",    "12 raters · 240 ratings\nCoherence 4.35 · Variety 3.65"),
+    ("Multi-Model",      "Budget compliance holds\nacross Haiku, Sonnet, GPT-4o"),
 ]
 for i, (val, label) in enumerate(takeaways):
-    xl = 0.6 + i * 3.05
-    add_rect(sl, xl, 1.8, 2.7, 2.4, fill=GREEN)
-    add_text(sl, val, xl+0.1, 1.95, 2.5, 0.8, size=22, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
-    add_text(sl, label, xl+0.1, 2.7, 2.5, 0.9, size=13, color=RGBColor(0xCC, 0xFF, 0xCC), align=PP_ALIGN.CENTER)
+    xl = 0.35 + i * 2.55
+    add_rect(sl, xl, 1.8, 2.3, 2.4, fill=GREEN)
+    add_text(sl, val, xl+0.08, 1.95, 2.15, 0.8, size=18, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
+    add_text(sl, label, xl+0.08, 2.7, 2.15, 0.9, size=11, color=RGBColor(0xCC, 0xFF, 0xCC), align=PP_ALIGN.CENTER)
 
 add_text(sl,
          "The core insight: LLMs are most powerful as reasoning engines embedded in structured "

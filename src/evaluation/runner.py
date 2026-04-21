@@ -229,18 +229,27 @@ if __name__ == "__main__":
         profiles = INITIAL_EVAL_PROFILES
         systems = ["biosync", "baseline", "no_critic"]
     elif args.mode == "multimodel":
-        # Multi-model: run biosync with haiku and sonnet on first 10 profiles
-        # Each "system" name here is just a label; MODEL_OVERRIDE is set per run
-        # We run two separate evaluations and combine results
+        # Multi-model comparison: run Bio-Sync with Haiku, Sonnet, and GPT-4o
+        # on the first 10 profiles. Each run uses MODEL_OVERRIDE to swap the LLM.
+        # GPT-4o requires OPENAI_API_KEY to be set; skipped if absent.
         profiles = INITIAL_EVAL_PROFILES
         results = {}
-        for model_key, model_id in [
-            ("sonnet", "claude-sonnet-4-6"),
-            ("haiku",  "claude-haiku-4-5-20251001"),
-        ]:
+
+        model_configs = [
+            ("haiku",  "claude-haiku-4-5-20251001", "Anthropic"),
+            ("sonnet", "claude-sonnet-4-6",          "Anthropic"),
+            ("gpt4o",  "gpt-4o",                     "OpenAI"),
+        ]
+
+        for model_key, model_id, provider in model_configs:
+            # Skip GPT-4o if no OpenAI key is configured
+            if provider == "OpenAI" and not os.environ.get("OPENAI_API_KEY"):
+                print(f"\nSkipping {model_id}: OPENAI_API_KEY not set.")
+                continue
+
             os.environ["MODEL_OVERRIDE"] = model_key
             print(f"\n{'='*55}")
-            print(f"  Running with model: {model_id}")
+            print(f"  Running with model: {model_id} ({provider})")
             print(f"{'='*55}")
             out = run_evaluation(
                 profiles[:args.n] if args.n else profiles,
@@ -248,6 +257,14 @@ if __name__ == "__main__":
                 f"eval_results/multimodel_{model_key}_{ts}.json",
             )
             results[model_key] = out
+
+        # Write a combined summary file
+        combined_path = f"eval_results/multimodel_combined_{ts}.json"
+        os.makedirs("eval_results", exist_ok=True)
+        import json as _json
+        with open(combined_path, "w") as f:
+            _json.dump(results, f, indent=2)
+        print(f"\nCombined multi-model results saved to: {combined_path}")
         sys.exit(0)
 
     if args.n:
