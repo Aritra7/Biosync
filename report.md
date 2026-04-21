@@ -210,7 +210,7 @@ Bio-Sync demonstrates that the budget-constrained meal planning problem is a goo
 
 The results also surface a broader principle: LLMs excel at tasks requiring reasoning, disambiguation, and creative generation, but should be paired with deterministic verifiers and fast lookup tables rather than being asked to self-check constraint satisfaction. Bio-Sync's architecture reflects this division of labor throughout.
 
-Immediate next steps are live API integration (eliminating the mock data limitation), a user clarification dialogue during plan generation, and a memory system to enforce variety across sessions.
+Immediate next steps are a multi-turn user revision dialogue (single-round revision is already implemented), a clarification dialogue during plan generation, and a memory system to enforce variety across sessions.
 
 ---
 
